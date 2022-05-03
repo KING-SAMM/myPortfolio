@@ -5,9 +5,11 @@ import { Navbar } from './components';
 const App = () => {
 
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
+    <div className="min-h-screen">
+      <div className="gradient-bg-home">
+        <Navbar />
+        <Home />
+      </div>
       <About />
       <Projects />
       <Skills />
