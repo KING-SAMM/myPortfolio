@@ -1,9 +1,10 @@
 import React from 'react';
-import './Home.scss';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <h1 className="text-3xl text-blue-800 font-bold underline">
+      Hello world!
+    </h1>
   )
 }
 
