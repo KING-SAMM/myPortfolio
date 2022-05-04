@@ -23,17 +23,26 @@ const Sidebar = () => {
     <nav className="gradient-bg-home w-20 h-screen absolute top-0 z-10 min-h-124">
       <Link className="logo block py-2 px-0" to="/">
         <img src={ images.logo } className={ `block my-2 mx-[auto] w-16 h-[auto]`} alt="logo" />
-        <img src={ images.logoSubtitle } className={ `sub-logo w-[50px]` } alt="KC Samm" />
+        {/* <img src={ images.logoSubtitle } className={ `sub-logo w-[50px]` } alt="KC Samm" /> */}
+        <p className={ `w-[50px] text-blue-400 text-center my-2 mx-[auto]` }>KC Samm</p>
       </Link>
       <div className="flex flex-col justify-start items-center text-center absolute h-[210px] top-[50%] mt-[-120px] w-full">
-        <NavLink exact="true" activeclassname="active" to="/" className={ `block text-2xl h-[51px] leading-10 relative no-underline` }>
-          <VscHome className='w-6 h-6 text-blue-400 hover:text-blue-200 transition-all duration-300 ease-out' />
+        <NavLink 
+          exact="true" activeclassname="active" to="/" 
+          className={ `block text-2xl h-[51px] leading-10 relative no-underline after:content-[' '] after:text-[9px] after:absolute after:tracking-[2px] after:bottom-0` }
+        >
+          <VscHome 
+            className='w-6 h-6 text-blue-400 hover:text-blue-200 transition-all duration-300 ease-out' />
         </NavLink>
-        <NavLink exact="true" activeclassname="active" to="/about" className={ `about-link block text-2xl h-[51px] leading-10 relative no-underline` }>
-          <VscAccount className='w-6 h-6 text-blue-400 hover:text-blue-200 transition-all duration-300 ease-out' />
+        <NavLink exact="true" activeclassname="active" to="/about" 
+          className={ `about-link block text-2xl h-[51px] leading-10 relative no-underline after:content-[' '] after:text-[9px] after:absolute after:tracking-[2px] after:bottom-0` }>
+          <VscAccount 
+            className='w-6 h-6 text-blue-400 hover:text-blue-200 transition-all duration-300 ease-out' />
         </NavLink>
-        <NavLink exact="true" activeclassname="active" to="/contact" className={ `contact-link block text-2xl h-[51px] leading-10 relative no-underline` }>
-          <VscMail className='w-6 h-6 text-blue-400 hover:text-blue-200 transition-all duration-300 ease-out' />
+        <NavLink exact="true" activeclassname="active" to="/contact" 
+          className={ `contact-link block text-2xl h-[51px] leading-10 relative no-underline after:content-[' '] after:text-[9px] after:absolute after:tracking-[2px] after:bottom-0` }>
+          <VscMail 
+            className='w-6 h-6 text-blue-400 hover:text-blue-200 transition-all duration-300 ease-out' />
         </NavLink>
       </div>
     </nav>
