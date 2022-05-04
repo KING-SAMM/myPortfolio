@@ -10,15 +10,15 @@ const App = () => {
       <Routes>
         <Route path='/' element={ <Layout />} />
       </Routes>
-      <div className="gradient-bg-home">
+      {/* <div className="gradient-bg-home">
         <Sidebar />
-      </div>
-      <Home />
+      </div> */}
+      {/* <Home />
       <About />
       <Projects />
       <Skills />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }
