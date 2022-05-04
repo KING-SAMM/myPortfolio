@@ -72,6 +72,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/*---------------------
+  UTILITY CLASSES
+----------------------*/
 .gradient-bg-home {
   background-color:#0f0e13;
   background-image: 
