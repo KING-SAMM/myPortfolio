@@ -1,0 +1,33 @@
+.home-page 
+{
+    .main-text 
+    {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translate(-50%);
+        width: 40%;
+        max-height: 50%;
+    }
+
+    h1
+    {
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        &::before
+        {
+            
+        }
+
+        &::after
+        {
+            animation: fadeIn 1s 1.7s backwards;
+        }
+        
+        img 
+        {
+            width: 32px;
+        }
+    }
+}
