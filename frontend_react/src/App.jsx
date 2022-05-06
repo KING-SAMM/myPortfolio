@@ -9,6 +9,8 @@ const App = () => {
     <div className="min-h-screen">
       <Routes>
         <Route path='/' element={ <Layout />} />
+
+        <Route index element={ <Home /> } />
       </Routes>
       {/* <div className="gradient-bg-home">
         <Sidebar />
