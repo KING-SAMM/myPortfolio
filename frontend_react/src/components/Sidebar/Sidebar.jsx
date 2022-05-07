@@ -11,8 +11,19 @@ const Sidebar = () => {
 
       {/* Main Logo  */}
       <Link className="logo flex flex-col py-2 px-0" to="/">
-        <img src={ images.logo } alt="logo" />
+        {/* <img src={ images.logo } alt="logo" /> */}
         {/* <img src={ images.logoSubtitle } className={ `sub-logo w-[50px]` } alt="KC Samm" /> */}
+
+        <svg width="58px" height="58px" viewBox="0 0 16 16">
+            <path fill="none" stroke="#030bfc" stroke-width="2" d="
+            m 3 10
+            c 0 4 8 4 8 0
+            q 0 -2 -4 -3
+            q -4 -1 -4 -3
+            c 0 -4 8 -4 8 0
+            "></path>
+          </svg>
+
         <p className={ `sub-logo w-[50px] text-blue-400 text-center my-2 mx-[auto]` }>KC Samm</p>
       </Link>
 

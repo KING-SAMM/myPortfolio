@@ -1,11 +1,12 @@
 .home-page 
 {
+    
     .main-text 
     {
         position: absolute;
         left: 10%;
-        top: 50%;
-        transform: translate(-50%);
+        top: 100px;
+        // transform: translate(-50%);
         width: 40%;
         max-height: 50%;
     }
@@ -17,17 +18,57 @@
 
         &::before
         {
-            
+            content: "";
+            font-size: 18px;
+            position: absolute;
+            opacity: 0.1;
         }
 
         &::after
         {
-            animation: fadeIn 1s 1.7s backwards;
+            content: "";
+            font-size: 18px;
+            position: absolute;
+            opacity: 0.6;
         }
         
-        img 
+        svg
         {
-            width: 32px;
+            display: inline-block;
+            width: 128px;
+            margin-left: 20px;
+            margin-right: -20px;
+            opacity: 0;
+            height: auto;
         }
+    }
+
+    h2 
+    {
+        font-weight: 400;
+        font-family: sans-serif;
+        letter-spacing: 3px;;
+
+    }
+
+    .flat-button
+    {
+        // display: inline-block;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        border: 1px solid rgb(96 165 250);
+        border-radius: 22px;
+        float: left;
+        white-space: nowrap;
+
+        &:hover 
+        {
+            background: rgb(96 165 250);
+            color: rgb(30 58 138);
+            font-weight: 600;
+        }
+
     }
 }
