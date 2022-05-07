@@ -12,7 +12,13 @@ const Home = () => {
     <div className="container home-page">
       <div className="main-text">
         <h1 className="text-blue-100 text-[50px] m-0 animate__animated animate__fadeIn animate__delay-2 ">
-          Hi, <br /> I'm
+
+          <span className={ letterClass } >H</span> 
+          <span className={ `${letterClass} _12` } >i</span> 
+          
+          <br /> 
+          <span className={ `${letterClass} _13` } >I'</span>
+          <span className={ `${letterClass} _14` } >m</span>
           
           <svg width="128px" height="128px" viewBox="0 0 16 16" className='animate__animated animate__rotateIn animate__delay-1.4'>
             <path fill="none" stroke="#030bfc" stroke-width="2" d="
