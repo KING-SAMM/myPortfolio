@@ -15,7 +15,7 @@ const Sidebar = () => {
         {/* <img src={ images.logoSubtitle } className={ `sub-logo w-[50px]` } alt="KC Samm" /> */}
 
         <svg width="58px" height="58px" viewBox="0 0 16 16">
-            <path fill="none" stroke="#030bfc" stroke-width="2" d="
+            <path fill="none" stroke="#030bfc" strokeWidth="2" d="
             m 3 10
             c 0 4 8 4 8 0
             q 0 -2 -4 -3
