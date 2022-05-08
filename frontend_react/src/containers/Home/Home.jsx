@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logoS from '../../assets/logoS.svg';
 import './Home.scss';
@@ -7,8 +7,18 @@ import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 
 const Home = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate');
+  const [ svgClass, setSvgClass ] = useState('');
   const nameArray = [ "a", "m", "m" ];
   const jobArray = [ "s", "o", "f", "t", "w", "a", "r", "e", " ", "e", "n", "g", "i", "n", "e", "e", "r", "." ];
+
+  useEffect(() => 
+  {
+    setTimeout(() => 
+    {
+      setLetterClass('text-animate-hover')
+      setSvgClass('text-animate-hover')
+    }, 4000);
+  }, [])
 
   return (
     <div className="container home-page">
@@ -22,8 +32,8 @@ const Home = () => {
           <span className={ `${letterClass} _13` }>I'</span>
           <span className={ `${letterClass} _14` }>m</span>
           
-          <svg width="128px" height="128px" viewBox="0 0 16 16" >
-            <path fill="none" stroke="#030bfc" strokeWidth="2" d="
+          <svg width="128px" height="128px" viewBox="0 0 16 16">
+            <path className={ svgClass } fill="none" stroke="#030bfc" strokeWidth="2" d="
               m 3 10
               c 0 4 8 4 8 0
               q 0 -2 -4 -3
