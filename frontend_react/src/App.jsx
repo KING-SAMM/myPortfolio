@@ -7,17 +7,14 @@ const App = () => {
 
   return (
     <div className="min-h-screen">
-      <Layout />
+      {/* <Layout /> */}
       <Routes>
-        {/* <Route path='/' element={ <Layout />} /> */}
-
-        <Route path='/' element={ <Home /> } />
+        <Route path='/' element={ <Layout /> }>
+          <Route index element={ <Home /> } />
+          <Route path='/about' element={ <About /> } />
+        </Route>
       </Routes>
-      {/* <div className="gradient-bg-home">
-        <Sidebar />
-      </div> */}
-      {/* <Home />
-      <About />
+      {/* 
       <Projects />
       <Skills />
       <Contact />
