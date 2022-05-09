@@ -7,12 +7,10 @@ import './Sidebar.scss';
 
 const Sidebar = () => {
   return (
-    <nav className="bg-[#181818] w-[60px] h-full absolute top-0 z-10 min-h-[500px] ">
+    <nav className="w-[60px] h-full absolute top-0 z-10 min-h-[500px] ">
 
       {/* Main Logo  */}
-      <Link className="logo flex flex-col py-2 px-0" to="/">
-        {/* <img src={ images.logo } alt="logo" /> */}
-        {/* <img src={ images.logoSubtitle } className={ `sub-logo w-[50px]` } alt="KC Samm" /> */}
+      <Link className="logo w-[60px] flex flex-col py-2 px-0" to="/">
 
         <svg width="58px" height="58px" viewBox="0 0 16 16">
             <path fill="none" stroke="#030bfc" strokeWidth="2" d="
@@ -24,7 +22,7 @@ const Sidebar = () => {
             "></path>
           </svg>
 
-        <p className={ `sub-logo w-[50px] text-blue-400 text-center my-2 mx-[auto]` }>KC Samm</p>
+        <p className={ `sub-logo w-[60px] text-blue-400 text-center my-2 mx-[auto]` }>KC Samm</p>
       </Link>
 
       {/* Navigation Links  */}

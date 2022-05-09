@@ -70,9 +70,33 @@ select
 
 body {
   background: #022C43;
+  
+  background-image: url('../src/assets/bg-blockchain02.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   font: 300 11px/1.4 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Medium screen background image  */
+@media (min-width: 768px)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain.jpg');
+  }
+}
+
+/* Large screen background image  */
+@media (min-width: 992px)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain02.jpg');
+  }
 }
 
 

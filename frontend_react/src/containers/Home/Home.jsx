@@ -11,8 +11,10 @@ const Home = () => {
   const nameArray = [ "a", "m", "m" ];
   const jobArray = [ "s", "o", "f", "t", "w", "a", "r", "e", " ", "e", "n", "g", "i", "n", "e", "e", "r", "." ];
 
+  // Animate (rubberBand) the Home page letters on hover 
   useEffect(() => 
   {
+    // Do this after 4s 
     setTimeout(() => 
     {
       setLetterClass('text-animate-hover')
@@ -25,13 +27,15 @@ const Home = () => {
       <div className="main-text">
         <h1 className="text-blue-100 text-[50px] m-0">
 
-          <span className={ letterClass }>H</span> 
-          <span className={ `${letterClass} _12` }>i</span> 
+          {/* Animate (fadeIn) the following letters  */}
+          <span className={ letterClass }> H </span> 
+          <span className={ `${letterClass} _12` }> i </span> 
           
           <br /> 
-          <span className={ `${letterClass} _13` }>I'</span>
-          <span className={ `${letterClass} _14` }>m</span>
+          <span className={ `${letterClass} _13` }> I' </span>
+          <span className={ `${letterClass} _14` }> m </span>
           
+          {/* Logo "S" svg  */}
           <svg width="128px" height="128px" viewBox="0 0 16 16">
             <path className={ svgClass } fill="none" stroke="#030bfc" strokeWidth="2" d="
               m 3 10
@@ -42,10 +46,12 @@ const Home = () => {
               "></path>
           </svg>
           
+          {/* Animate (fadeIn) nameArray elements  */}
           <AnimatedLetters letterClass={ letterClass } strArray={ nameArray } idx={ 15 } />
-
-          <br />
-          
+        </h1>
+          {/* <br /> */}
+        <h1 className="text-blue-100 text-[35px] m-0 ">
+          {/* Animate (fadeIn) jobArray elements */}
           <AnimatedLetters letterClass={ letterClass } strArray={ jobArray } idx={ 18 } />
 
         </h1>

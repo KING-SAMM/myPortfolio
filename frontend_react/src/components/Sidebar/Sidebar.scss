@@ -5,8 +5,10 @@ nav
     height: 100%;
     position: absolute;
     top: 0;
+    left: 3%;
     z-index: 3;
     min-height: 500px;
+
 
     // Logo 
     .logo
@@ -23,122 +25,148 @@ nav
 
             &.sub-logo
             {
-                width: 50px;
+                width: 60px;
             }
         }
     }
 
     // Navigation Menu 
-    .nav-links
+    .nav-links 
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: absolute;
-        height: 210px;
-        top: 50%;
-        margin-top: -120px;
-        width: 100%;
+        display: none;
+    }
 
-        // The links, i.e <NavLink /> elements 
-        a 
+    // Navigation Menu for desktops / laptops
+    @media (min-width: 992px) 
+    {
+        .nav-links
         {
-            // Initial state
-            font-size: 22px;
             display: flex;
             justify-content: center;
             align-items: center;
-            line-height: 51px;
-            height: 51px;
-            position: relative;
-            text-decoration: none;
+            text-align: center;
+            position: absolute;
+            height: 210px;
+            top: 50%;
+            margin-top: -120px;
+            width: 100%;
 
-            // Mode of transition  of icons
-            i
+            // The links, i.e <NavLink /> elements 
+            a 
             {
-                transition: all 0.3s ease-out;
-            }
+                // Initial state
+                font-size: 22px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 51px;
+                height: 51px;
+                position: relative;
+                text-decoration: none;
 
-            // State of icons on hover of <NavLink />
-            &:hover 
-            {
-                color: rgb(255 255 255);
-
-                svg 
+                // Mode of transition  of icons
+                i
                 {
-                    padding: 15px;
-                    background-color: rgba(219, 234, 254, 0.1);
-                    border-radius: 50%;
-                    // opacity: 0;
+                    transition: all 0.3s ease-out;
                 }
 
-                // Icons pseudo element: 
-                // the text over each icon should appear
+                // State of icons on hover of <NavLink />
+                &:hover 
+                {
+                    color: rgb(255 255 255);
+
+                    svg 
+                    {
+                        padding: 15px;
+                        background-color: rgba(219, 234, 254, 0.1);
+                        border-radius: 50%;
+                        // opacity: 0;
+                    }
+
+                    // Icons pseudo element: 
+                    // the text over each icon should appear
+                    &::after 
+                    {
+                        opacity: 1;
+                    }
+                }
+
+                // Initial state of pseudo elements of icons
                 &::after 
                 {
-                    opacity: 1;
+                    content: '';
+                    font-size: 9px;
+                    letter-spacing: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    display: block;
+                    width: 100%;
+                    text-align:center;
+                    opacity: 0;
+                    transition: all 0.3s ease-out;
+                }
+
+                // First icon
+                &:first-child
+                {
+                    // Pseudo element of first icon
+                    &::after
+                    {
+                        content: 'HOME';
+                        right: 0px;
+                    }
                 }
             }
 
-            // Initial state of pseudo elements of icons
-            &::after 
+            // About <NavLink />
+            a.about-link 
             {
-                content: '';
-                font-size: 9px;
-                letter-spacing: 2px;
-                position: absolute;
-                bottom: 0;
-                display: block;
-                width: 100%;
-                text-align:center;
-                opacity: 0;
-                transition: all 0.3s ease-out;
-            }
-
-            // First icon
-            &:first-child
-            {
-                // Pseudo element of first icon
+                // Pseudo element of about link icon 
                 &::after
                 {
-                    content: 'HOME';
-                    right: 0px;
+                    content: 'ABOUT';
+                    right: 3px;
                 }
             }
-        }
 
-        // About <NavLink />
-        a.about-link 
-        {
-            // Pseudo element of about link icon 
-            &::after
+            // Contact <NavLink />
+            a.contact-link 
             {
-                content: 'ABOUT';
-                right: 3px;
+                // Pseudo element of about link icon
+                &::after
+                {
+                    content: 'CONTACT';
+                    right: 10px;
+                }
             }
-        }
 
-        // Contact <NavLink />
-        a.contact-link 
-        {
-            // Pseudo element of about link icon
-            &::after
+            // State of icons when link is active
+            a.active 
             {
-                content: 'CONTACT';
-                right: 10px;
-            }
-        }
-
-        // State of icons when link is active
-        a.active 
-        {
-            svg 
-            {
-                color: rgb(219 234 254);
-                background-color: rgba(219, 234, 254, 0.2);
-                border-radius: 50%;
+                svg 
+                {
+                    color: rgb(219 234 254);
+                    background-color: rgba(219, 234, 254, 0.2);
+                    border-radius: 50%;
+                }
             }
         }
     }
 }
+
+@media (min-width: 768px)
+{
+    nav 
+    {
+        left: 7%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    nav 
+    {
+        left: 0px;
+    }
+}
+
