@@ -38,11 +38,11 @@ const Skills = () => {
               <span>Solidity</span>
             </div>
             <div className="">
-              <RiHtml5Fill className="text-red-600" />
+              <RiHtml5Fill className="text-[#F06529]" />
               <span>HTML 5</span>
             </div>
             <div className="">
-              <RiCss3Fill className="text-blue-700" />
+              <RiCss3Fill className="text-[#28A4D9]" />
               <span>CSS 3</span>
             </div>
             <div className="">
@@ -57,7 +57,7 @@ const Skills = () => {
 
           <div className="skills-list__right">
             <div className="">
-              <RiReactjsLine className="text-blue-500" />
+              <RiReactjsLine className="text-[#5ED4F4]" />
               <span>React</span>
             </div>
             <div className="">
