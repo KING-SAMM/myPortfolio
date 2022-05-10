@@ -31,12 +31,12 @@
     .main-text
     {
         position: absolute;
-        left: 10%;
+        left: 5%;
         top: 100px;
         // transform: translateY(-50%);
-        width: 35%;
+        width: 90%;
         vertical-align: middle;
-        display: table-cell;
+        // display: table-cell;
         max-height: 90%;
 
         h1 
@@ -84,6 +84,34 @@
         &:hover 
         {
             color:rgb(219 234 254)
+        }
+    }
+}
+
+// About page
+// Main text for medium screens
+@media (min-width: 768px)
+{
+    .about-page
+    {
+        .main-text
+        {
+            left: 8%;
+            width: 60%;
+        }
+    }
+}
+
+// About page
+// Main text for large screens
+@media (min-width: 992px)
+{
+    .about-page
+    {
+        .main-text
+        {
+            left: 10%;
+            width: 40%;
         }
     }
 }

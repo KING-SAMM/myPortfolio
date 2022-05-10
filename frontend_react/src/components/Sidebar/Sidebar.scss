@@ -129,10 +129,21 @@ nav
                 }
             }
 
+            // Skills <NavLink />
+            a.skills-link 
+            {
+                // Pseudo element of skills link icon 
+                &::after
+                {
+                    content: 'SKILLS';
+                    right: 3px;
+                }
+            }
+
             // Contact <NavLink />
             a.contact-link 
             {
-                // Pseudo element of about link icon
+                // Pseudo element of contact link icon
                 &::after
                 {
                     content: 'CONTACT';

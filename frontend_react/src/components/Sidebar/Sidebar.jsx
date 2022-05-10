@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { images } from '../../constants';
-import { VscHome, VscAccount, VscMail, VscListSelection, VscChromeClose } from "react-icons/vsc";
+import { VscHome, VscAccount, VscMail, VscTools, VscListSelection, VscChromeClose } from "react-icons/vsc";
 import './Sidebar.scss';
 
 
@@ -36,6 +36,11 @@ const Sidebar = () => {
         {/* About  */}
         <NavLink exact="true" activeclassname="active" to="/about" className={ `about-link text-blue-400` }>
           <VscAccount className='text-blue-400' />
+        </NavLink>
+
+        {/* Skills  */}
+        <NavLink exact="true" activeclassname="active" to="/skills" className={ `skills-link text-blue-400` }>
+          <VscTools className='text-blue-400' />
         </NavLink>
 
         {/* Contact  */}

@@ -29,7 +29,8 @@ const Home = () => {
 
           {/* Animate (fadeIn) the following letters  */}
           <span className={ letterClass }> H </span> 
-          <span className={ `${letterClass} _12` }> i </span> 
+          <span className={ `${letterClass} _11` }> i </span> 
+          <span className={ `${letterClass} _12` }> , </span> 
           
           <br /> 
           <span className={ `${letterClass} _13` }> I' </span>
