@@ -1,10 +1,16 @@
 .skills-page 
 {
+    display: flex;
+    flex-direction: column;
+
+    // Main text
     .main-text
     {
-        position: absolute;
-        left: 5%;
-        top: 100px;
+        // position: absolute;
+        margin-top: 80px;
+        margin: 80px auto;
+        // left: 5%;
+        // top: 100px;
         // transform: translateY(-50%);
         width: 90%;
         vertical-align: middle;
@@ -13,14 +19,14 @@
 
         h1 
         {
-            font-size: 53px;
+            font-size: 33px;
             font-family: 'Coolvetica';
             color: rgb(96 165 250);
             font-weight: 400;
             margin-top: 0;
             position: relative;
             margin-bottom: 30px;
-            left: 10px;
+            // left: 10px;
         }
 
         .skills-list 
@@ -28,6 +34,7 @@
             display: flex;
             flex-direction: row;
             // background-color: aqua;
+            justify-content: space-evenly;
 
             .skills-list__left, .skills-list__right
             {
@@ -57,7 +64,7 @@
 
             svg
             {
-                font-size: xx-large;
+                font-size: large;
             }
         }
 
@@ -70,6 +77,97 @@
             color:rgb(219 234 254)
         }
     }
+
+    // Cube Container
+    .cube-container
+    {
+        // margin-top: 100px;
+        margin-left: 5%;
+        display: block;
+        margin: 0% auto;
+        // left: 5%;
+        // top: 100px;
+        // transform: translateY(-50%);
+        // width: 90%;
+        // vertical-align: middle;
+        // display: table-cell;
+        max-height: 90%;
+
+        svg 
+        {
+            font-size: large;
+        }
+
+        // Icons cube animation
+        .cubespinner
+        {
+            animation-name: spincube;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            animation-duration: 12s;
+
+            transform-style: preserve-3d;
+            transform-origin: 100px 100px 0;
+            margin-left: calc(30% - 100px);
+
+            div 
+            {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border: 1px solid #CCC;
+                background: rgb(255, 255, 255, 0.2);
+                font-size: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 20px 0px lightblue;
+
+                svg
+                {
+                    font-size: 70px;
+                }
+            }
+
+            .face1 
+            {
+                transform: translateZ(100px);
+            }
+            .face2 
+            {
+                transform: rotateY(90deg) translateZ(100px);
+            }
+            .face3 
+            {
+                transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+            }
+            .face4 
+            {
+                transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+            }
+            .face5 
+            {
+                transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+            }
+            .face6 
+            {
+                transform: rotateX(-90deg) translateZ(100px);
+            }
+        }
+
+        @keyframes spincube 
+        {
+            from,
+            to { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }   
+            16% { transform: rotateY(-90deg); } 
+            33% { transform: rotateY(-90deg) rotateZ(90deg); } 
+            50% { transform: rotateY(-180deg) rotateZ(90deg); } 
+            66% { transform: rotateY(-270deg) rotateZ(90deg); } 
+            83% { transform: rotateX(90deg); } 
+        }
+    } 
+
 }
 
 // Main text for medium screens
@@ -77,10 +175,29 @@
 {
     .skills-page
     {
+        
         .main-text
         {
-            left: 8%;
+            margin-left: 5%;
+            display: block;
+            margin: 0% auto;
+            margin-top: 90px;
+            margin-left: 8%;
+            // left: 8%;
             width: 60%;
+
+            h1 
+            {
+                font-size: 43px;
+            }
+
+            .skills-list
+            {
+                svg
+                {
+                    font-size: x-large;
+                }
+            }
         }
     }
 }
@@ -90,22 +207,120 @@
 {
     .skills-page
     {
+        flex-direction: row;
         .main-text
         {
-            left: 10%;
+            margin-top: 100px;
+            margin-left: 10%;
+            // left: 10%;
             width: 40%;
+
+            h1 
+            {
+                font-size: 53px;
+            }
+
+            .skills-list
+            {
+                display: flex;
+                flex-direction: row;
+                // background-color: aqua;
+                justify-content: flex-start;
+                width: auto;
+                svg
+                {
+                    font-size: xx-large;
+                }
+            }
         }
     }
 }
 
-.cube-container 
-{
-    position: absolute;
-    left: 600px;
-    top: 200px;
 
-    svg 
+
+// Cube Container for medium screens
+@media (min-width: 768px)
+{
+    .cube-container
     {
-        font-size: xx-large;
+        padding-top: 10%;
+        // padding-left: 3%;
+        // left: 5%;
+        // top: 100px;
+        // transform: translateY(-50%);
+        // width: 50%;
+        // vertical-align: middle;
+        // display: table-cell;
+        // max-height: 90%;
+        // overflow: hidden;
+
+
+        margin-left: 5%;
+        display: block;
+        margin: 0 auto;
+        // left: 5%;
+        // top: 100px;
+        // transform: translateY(-50%);
+        // width: 90%;
+        // vertical-align: middle;
+        // display: table-cell;
+        // max-height: 90%;
+        
+
+        svg 
+        {
+            font-size: x-large;
+        }
+
+        // Icons cube animation
+        .cubespinner
+        {
+            div 
+            {
+                svg
+                {
+                    font-size: 100px;
+                }
+            }
+
+        }
     }
 }
+
+// Cube Container for large screens
+@media (min-width: 992px)
+{
+    .cube-container
+    {
+        padding-top: 18%;
+        margin-left: 0;
+        // left: 5%;
+        // top: 100px;
+        // transform: translateY(-50%);
+        width: 60%;
+        // vertical-align: middle;
+        // display: table-cell;
+        max-height: 100%;
+        overflow: hidden;
+
+        svg 
+        {
+            font-size: xx-large;
+        }
+
+        // Icons cube animation
+        .cubespinner
+        {
+            div 
+            {
+                svg
+                {
+                    font-size: 100px;
+                }
+            }
+
+        }
+
+    }
+}
+

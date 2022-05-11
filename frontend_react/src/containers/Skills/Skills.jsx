@@ -1,9 +1,8 @@
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { RiReactjsLine, RiHtml5Fill, RiCss3Fill } from "react-icons/ri";
-import { FaSass, FaPhp, FaEthereum } from "react-icons/fa";
+import { FaSass, FaPhp, FaEthereum, FaNodeJs } from "react-icons/fa";
 import { SiSolidity, SiJavascript, SiMongodb, SiTypescript } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
 import './Skills.scss';
 
 const Skills = () => {
@@ -16,7 +15,7 @@ const Skills = () => {
     setTimeout(() => 
     {
       setLetterClass('text-animate-hover')
-      setSvgClass('text-animate-hover')
+      // setSvgClass('text-animate-hover')
     }, 3000);
   }, [])
 
@@ -83,37 +82,22 @@ const Skills = () => {
       <div className="cube-container">
         <div className="cubespinner">
           <div className="face1">
-            <RiHtml5Fill className="text-red-600" />
-          </div>
-          <div className="face2">
-            <RiCss3Fill className="text-blue-700" />
-          </div>
-          <div className="face3">
-            <FaSass className="text-red-600" />
-          </div>
-          <div className="face4">
-            <FaPhp className="text-blue-500" />
-          </div>
-          <div className="face5">
             <FaEthereum className="text-cyan-400" />
           </div>
-          <div className="face6">
-            <RiReactjsLine className="text-blue-500" />
+          <div className="face2">
+            <FaSass className="text-red-600" />
           </div>
-          <div className="face7">
+          <div className="face3">
+            <SiSolidity className="text-gray-500" />
+          </div>
+          <div className="face4">
             <FaNodeJs className="text-green-500" />
           </div>
-          <div className="face8">
-            <SiMongodb className="text-green-700" />
-          </div>
-          <div className="face9">
-            <SiJavascript className="text-yellow-500" />
-          </div>
-          <div className="face10">
+          <div className="face5">
             <SiTypescript className="text-yellow-500" />
           </div>
-          <div className="face11">
-            <SiSolidity className="text-gray-500" />
+          <div className="face6">
+            <RiReactjsLine className="text-blue-400" />
           </div>
         </div>
       </div>
