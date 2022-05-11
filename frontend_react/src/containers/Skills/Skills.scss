@@ -66,6 +66,7 @@
             {
                 font-size: large;
             }
+
         }
 
     }
@@ -231,6 +232,70 @@
                 {
                     font-size: xx-large;
                 }
+
+                // Fade in left skills list
+                .skills-list__left 
+                {
+                    div 
+                    {
+                        animation: fadeIn 1s backwards;
+                       
+                        &:nth-of-type(1)
+                        {
+                            animation-delay: 1.8s;
+                        }
+
+                        &:nth-of-type(2)
+                        {
+                            animation-delay: 2.0s;
+                        }
+
+                        &:nth-of-type(3)
+                        {
+                            animation-delay: 2.2s;
+                        }
+                        &:nth-of-type(4)
+                        {
+                            animation-delay: 2.4s;
+                        }
+                        &:nth-of-type(5)
+                        {
+                            animation-delay: 2.6s;
+                        }
+                    }
+                }
+
+                // Fade in right skills list
+                .skills-list__right 
+                {
+                    div 
+                    {
+                        animation: fadeIn 1s backwards;
+                       
+                        &:nth-of-type(1)
+                        {
+                            animation-delay: 2.8s;
+                        }
+
+                        &:nth-of-type(2)
+                        {
+                            animation-delay: 3.0s;
+                        }
+
+                        &:nth-of-type(3)
+                        {
+                            animation-delay: 3.2s;
+                        }
+                        &:nth-of-type(4)
+                        {
+                            animation-delay: 3.4s;
+                        }
+                        &:nth-of-type(5)
+                        {
+                            animation-delay: 3.6s;
+                        }
+                    }
+                }
             }
         }
     }
@@ -244,27 +309,9 @@
     .cube-container
     {
         padding-top: 10%;
-        // padding-left: 3%;
-        // left: 5%;
-        // top: 100px;
-        // transform: translateY(-50%);
-        // width: 50%;
-        // vertical-align: middle;
-        // display: table-cell;
-        // max-height: 90%;
-        // overflow: hidden;
-
-
         margin-left: 5%;
         display: block;
         margin: 0 auto;
-        // left: 5%;
-        // top: 100px;
-        // transform: translateY(-50%);
-        // width: 90%;
-        // vertical-align: middle;
-        // display: table-cell;
-        // max-height: 90%;
         
 
         svg 
@@ -294,31 +341,12 @@
     {
         padding-top: 18%;
         margin-left: 0;
-        // left: 5%;
-        // top: 100px;
-        // transform: translateY(-50%);
         width: 60%;
-        // vertical-align: middle;
-        // display: table-cell;
-        max-height: 100%;
         overflow: hidden;
 
         svg 
         {
             font-size: xx-large;
-        }
-
-        // Icons cube animation
-        .cubespinner
-        {
-            div 
-            {
-                svg
-                {
-                    font-size: 100px;
-                }
-            }
-
         }
 
     }

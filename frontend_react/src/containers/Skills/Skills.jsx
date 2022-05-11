@@ -56,7 +56,7 @@ const Skills = () => {
 
           <div className="skills-list__right">
             <div className="">
-              <RiReactjsLine className="text-[#5ED4F4]" />
+              <RiReactjsLine className="text-[#5ED4F4] animate__animated animate" />
               <span>React</span>
             </div>
             <div className="">

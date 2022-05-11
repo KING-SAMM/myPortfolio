@@ -12,7 +12,6 @@ const About = () => {
     setTimeout(() => 
     {
       setLetterClass('text-animate-hover')
-      setSvgClass('text-animate-hover')
     }, 3000);
   }, [])
 
