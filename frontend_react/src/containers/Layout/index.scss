@@ -26,7 +26,8 @@
     animation-delay: 1s;
 }
 
-.about-page 
+.about-page,
+.contact-page
 {
     .main-text
     {
@@ -88,11 +89,14 @@
     }
 }
 
+
+
 // About page
 // Main text for medium screens
 @media (min-width: 768px)
 {
-    .about-page
+    .about-page,
+    .contact-page
     {
         .main-text
         {
@@ -106,7 +110,8 @@
 // Main text for large screens
 @media (min-width: 992px)
 {
-    .about-page
+    .about-page,
+    .contact-page
     {
         .main-text
         {
