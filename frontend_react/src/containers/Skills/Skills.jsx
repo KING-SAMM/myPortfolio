@@ -2,7 +2,7 @@ import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { RiReactjsLine, RiHtml5Fill, RiCss3Fill } from "react-icons/ri";
 import { FaSass, FaPhp, FaEthereum, FaNodeJs } from "react-icons/fa";
-import { SiSolidity, SiJavascript, SiMongodb, SiTypescript } from "react-icons/si";
+import { SiSolidity, SiJavascript, SiMongodb, SiTypescript, SiTailwindcss, SiGraphql } from "react-icons/si";
 import './Skills.scss';
 
 const Skills = () => {
@@ -52,6 +52,10 @@ const Skills = () => {
               <FaSass className="text-red-600" />
               <span>Sass</span>
             </div>
+            <div className="">
+              <SiTailwindcss className="text-blue-500" />
+              <span>Tailwind</span>
+            </div>
           </div>
 
           <div className="skills-list__right">
@@ -62,6 +66,10 @@ const Skills = () => {
             <div className="">
               <FaNodeJs className="text-green-500" />
               <span>Node</span>
+            </div>
+            <div className="">
+              <SiGraphql className="text-red-500" />
+              <span>GraphQL</span>
             </div>
             <div className="">
               <SiMongodb className="text-green-700" />

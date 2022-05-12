@@ -72,13 +72,14 @@
 }
 
 
-//Medium Screens
+//Medium and large Screens 
 @media (min-width: 768px)
 {
     .contact-form
     {
         ul
         {
+            // Name and email fields to lie side by side
             li.half 
             {
                 flex-direction: row;
