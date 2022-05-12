@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
+import './App.scss';
 import { Home, About, Projects, Skills, Contact, Footer, Layout } from './containers';
 import { Sidebar } from './components';
 

@@ -7,7 +7,7 @@ import './Sidebar.scss';
 
 const Sidebar = () => {
   return (
-    <nav className="w-[60px] h-full absolute top-0 z-10 min-h-[500px] ">
+    <nav>
 
       {/* Main Logo  */}
       <Link className="logo w-[60px] flex flex-col py-2 px-0" to="/">
