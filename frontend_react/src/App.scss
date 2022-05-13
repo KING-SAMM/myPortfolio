@@ -1,7 +1,7 @@
 /*---------------------
 UTILITY CLASSES
 ----------------------*/
-// Colors 
+/* Colors */
 $blue-100: rgb(219 234 254);
 $blue-200: rgb(191 219 254);
 $blue-400: rgb(96 165 250);
@@ -9,7 +9,29 @@ $blue-500: rgb(59 130 246);
 
 
 
-/* flat Button  */
+/*--- Scrolling ---*/
+
+// Disable scrolling on large screens
+@media (min-width: 992px)
+{
+  .scroll
+  {
+    display: none;
+  }
+}
+
+// Enable scrolling on medium and small screens
+@media (max-width: 991px)
+{
+  .scroll
+  {
+    display: block;
+  }
+}
+
+
+
+/*--- flat Button  ---*/
 .flat-button
 {
     /* display: inline-block; */
@@ -32,7 +54,9 @@ $blue-500: rgb(59 130 246);
     }
 }
 
-/* Backgrounds */
+
+
+/*--- Backgrounds ---*/
 .gradient-bg-home {
   background-color:#0f0e13;
   background-image: 
@@ -71,7 +95,7 @@ $blue-500: rgb(59 130 246);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* white glassmorphism */
+// white glassmorphism 
 .white-glassmorphism {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
@@ -89,6 +113,8 @@ $blue-500: rgb(59 130 246);
 }
 
 
+
+/*--- Special classes ---*/
 .app__flex
 {
     display: flex;

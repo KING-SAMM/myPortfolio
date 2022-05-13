@@ -120,6 +120,7 @@
             bottom: 0;
             right: 0;
             z-index: 5;
+            opacity: 0;
     
             padding: 1rem;
             padding-left: 2.5rem;
@@ -176,7 +177,7 @@
     
                         &:hover
                         {
-                            color: red;
+                            // color: rgba(255, 255, 255w);
                         }
                     }
                 }

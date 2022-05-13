@@ -6,13 +6,13 @@ import './index.scss';
 const Layout = () =>
 {
     return (
-        <>
+        <div>
             <Sidebar />
             <div className="page w-full h-full absolute">
                 <Outlet />
             </div>
             <MobileNav />
-        </>
+        </div>
     )
 }
 

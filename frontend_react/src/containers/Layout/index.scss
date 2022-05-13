@@ -4,6 +4,8 @@
     height: 100%;
     position: absolute;
 
+
+
     // background-image: url('../../assets/bg-blockchain02.jpg');
     // background-position: center;
     // background-repeat: no-repeat;
@@ -118,5 +120,26 @@
             left: 10%;
             width: 40%;
         }
+    }
+}
+
+// Layout Page
+// Show default ( no scroll ) layout on large screens
+@media (min-width: 992px) 
+{
+    .page 
+    {
+        display: block;
+    }
+}
+
+
+
+// Hide alternate mobile view on large screens
+@media (max-width: 991px)
+{
+    .page
+    {
+        display: none;
     }
 }

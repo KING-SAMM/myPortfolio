@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Projects = () => {
+const Blog = () => {
   return (
     <h1 className='text-white flex justify-center items-center text-5xl invisible'>
-        Projects
+        Blog
     </h1>
   )
 }
 
-export default Projects
+export default Blog
