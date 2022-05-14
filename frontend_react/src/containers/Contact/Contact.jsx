@@ -1,10 +1,12 @@
 import './Contact.scss';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FlatButton } from '../../components';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate');
+  const refForm = useRef();
  
   // Animate (rubberBand) the Home page letters on hover 
   useEffect(() => 
@@ -14,7 +16,32 @@ const Contact = () => {
     {
       setLetterClass('text-animate-hover')
     }, 3000);
-  }, [])
+  }, []);
+
+  // Send Email
+  const handleEmail = (e) => 
+  {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_iyzbobp',
+        'template_iw16db7',
+        refForm.current,
+        'rTG4a2fagn6rsBIeK'
+      ).then(
+        (response) => { 
+          alert('Message successfully sent!');
+          console.log('SUCCESS!', response.status, response.text)
+          window.location.reload(false);
+         },
+
+         (error) => {
+           alert('Message could not be sent. Please try again!');
+           console.log('FAILED...', error);
+         }
+      )
+  }
 
   return (
     <div className='container contact-page'>
@@ -30,7 +57,7 @@ const Contact = () => {
         </p>
 
         <div className="contact-form">
-          <form>
+          <form ref={ refForm } onSubmit={ handleEmail }>
             <ul>
               <li className="half">
                 <input type="text" name="name" placeholder='Name' required />

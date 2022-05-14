@@ -8,7 +8,6 @@ const App = () => {
 
   return (
     <div className="">
-      {/* <Layout /> */}  
       <div className='scroll'>
         <ScrollLayout />
       </div>             
