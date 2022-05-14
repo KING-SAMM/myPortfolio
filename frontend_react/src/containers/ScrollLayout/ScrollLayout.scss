@@ -1,0 +1,19 @@
+/*--- Scrolling ---*/
+
+// Disable scrolling on large screens
+@media (min-width: 992px)
+{
+  .scroll
+  {
+    display: none;
+  }
+}
+
+// Enable scrolling on medium and small screens
+@media (max-width: 991px)
+{
+  .scroll
+  {
+    display: block;
+  }
+}
