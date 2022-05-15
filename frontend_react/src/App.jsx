@@ -7,7 +7,7 @@ import { Sidebar } from './components';
 const App = () => {
 
   return (
-    <div className="">
+    <div className='app'>
       <div className='scroll'>
         <ScrollLayout />
       </div>             

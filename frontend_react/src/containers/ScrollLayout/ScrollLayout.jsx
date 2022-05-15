@@ -6,12 +6,12 @@ import './ScrollLayout.scss';
 // Alternate Layout for scrolling on mobile devices
 const ScrollLayout = () => {
   return (
-    <div>
+    <>
       <Home />
       <About />
       <Skills />
       <Contact />
-    </div>
+    </>
   )
 }
 

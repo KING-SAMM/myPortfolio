@@ -51,7 +51,7 @@ const Home = () => {
           <AnimatedLetters letterClass={ letterClass } strArray={ nameArray } idx={ 15 } />
         </h1>
           {/* <br /> */}
-        <h1 className="text-blue-100 text-[35px] m-0 ">
+        <h1 className="job-h1 text-blue-100 m-0 ">
           {/* Animate (fadeIn) jobArray elements */}
           <AnimatedLetters letterClass={ letterClass } strArray={ jobArray } idx={ 18 } />
 

@@ -53,7 +53,7 @@ const Contact = () => {
             idx={ 15 } />
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Let's have a little chat. 
         </p>
 
         <div className="contact-form">
