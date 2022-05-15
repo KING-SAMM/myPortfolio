@@ -114,7 +114,13 @@
 // Contact page
 .contact-page
 {
-    margin: 2850px 0;
+    margin: 2850px 0px;
+    // background-image: url('../../assets/hand-touching-global-network03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
 }
 
 // Turn off outmost div margins om large screen

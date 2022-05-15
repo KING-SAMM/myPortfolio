@@ -44,7 +44,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='container contact-page'>
+    <div className='container contact-page blue-glassmorphism'>
       <div className="main-text">
         <h1>
           <AnimatedLetters 

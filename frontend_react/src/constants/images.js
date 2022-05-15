@@ -9,7 +9,13 @@ import bg_blockchain04 from '../assets/bg-blockchain04.jpg';
 import bg_blockchain05 from '../assets/bg-blockchain05.jpg';
 import bg_blockchain06 from '../assets/bg-blockchain06.jpg';
 import bg_blockchain07 from '../assets/bg-blockchain07.jpg';
+
 import web_dev from '../assets/web-dev.png';
+import communication02 from '../assets/communication02.jpg';
+
+import hand-touching-global-network02 from '../assets/hand-touching-global-network02.jpg';
+import hand-touching-global-network03 from '../assets/hand-touching-global-network03.jpg';
+import hand-touching-global-network04 from '../assets/hand-touching-global-network04.jpg';
 
 export default 
 {
@@ -23,5 +29,9 @@ export default
     bg_blockchain04,
     bg_blockchain05,
     bg_blockchain06,
-    bg_blockchain07
+    bg_blockchain07,
+    communication02,
+    hand-touching-global-network02,
+    hand-touching-global-network03,
+    hand-touching-global-network04
 }
