@@ -2,10 +2,10 @@ import { useState } from 'react';
 import './MobileNav.scss';
 import { HiMenuAlt2, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const MobileNav = () => {
     const [toggle, setToggle] = useState(false);
-
 
     return (
         <nav className='app__navbar'>
@@ -32,13 +32,13 @@ const MobileNav = () => {
                         <ul>
                             {[ "home", "about", "skills", "contact" ].map(( item ) => (
                                 <l1 key={ `${ item }` }>
-                                    <a 
-                                        href={ `#${ item }` }
-                                        onClick={ () => setToggle( true ) } 
+                                    <Link 
+                                        to={ `/${ item }` }
+                                        onClick={ () => setToggle( false ) } 
                                         className="text-2xl text-blue-100 font-normal hover:text-blue-50 "
                                     > 
                                         { item } 
-                                    </a>
+                                    </Link>
                                 </l1>
                             ))}
                         </ul>
