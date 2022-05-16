@@ -77,8 +77,8 @@ body {
                     url('../src/assets/logo02.png'), 
                     url('../src/assets/hand_touching_global_network03.jpg');
   background-position: center, 
-                       88vw 365vw,
-                       center 670vw;;
+                       88vw 1565px,
+                       center 2780px;;
   background-repeat: no-repeat, 
                      no-repeat,
                      no-repeat;
