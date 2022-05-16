@@ -3,13 +3,6 @@
     width: 100vw;
     height: 100vw;
     position: absolute;
-
-
-
-    // background-image: url('../../assets/bg-blockchain02.jpg');
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: contain;
 }
 
 .container
@@ -76,8 +69,17 @@
 // About page
 .about-page
 {
-    margin: 880px 0;
+    margin: 200vw 0;
 
+}
+
+// Medium screen
+@media (min-width: 768px)
+{
+    .about-page
+    {
+        margin: 115vw 0;
+    }
 }
 
 // Turn off outmost div margins om large screen
@@ -94,9 +96,15 @@
 // Skills Page
 .skills-page
 {
-    margin: 1910px 0;
-
-    background-color: black;
+    margin: 410vw 0;
+}
+// Medium screen
+@media (min-width: 768px)
+{
+    .skills-page
+    {
+        margin: 230vw 0;
+    }
 }
 
 // Turn off outmost div margins om large screen
@@ -106,7 +114,6 @@
     {
         margin-top: 0;
         margin-bottom: 0;
-        background-color: transparent;
     }
 }
 
@@ -114,13 +121,16 @@
 // Contact page
 .contact-page
 {
-    margin: 2850px 0px;
-    // background-image: url('../../assets/hand-touching-global-network03.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 670vw 0;
+}
 
-    
+// Medium screen
+@media (min-width: 768px)
+{
+    .contact-page
+    {
+        margin: 345vw 0;
+    }
 }
 
 // Turn off outmost div margins om large screen

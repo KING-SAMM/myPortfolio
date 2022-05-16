@@ -73,10 +73,18 @@ body {
   background: rgb(1, 10, 39);
   background-image: linear-gradient(120deg, rgb(0, 5, 20), rgb(1, 10, 39), rgb(6, 21, 63));
   
-  background-image: url('../src/assets/bg-blockchain02.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'), 
+                    url('../src/assets/hand_touching_global_network03.jpg');
+  background-position: center, 
+                       88vw 365vw,
+                       center 670vw;;
+  background-repeat: no-repeat, 
+                     no-repeat,
+                     no-repeat;
+  background-size: cover, 
+                   20vw,
+                   contain;
 
   font: 300 11px/1.4 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -88,7 +96,24 @@ body {
 {
   body
   {
-    background-image: url('../src/assets/bg-blockchain.jpg');
+    background-image: url('../src/assets/bg-blockchain.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network03.jpg');
+      
+    /* -webkit-background-position:top center, center, bottom center; */
+    background-position: top center, 
+                         -60vw 175vw,
+                         75vw 265vw,
+                         0 350vw;
+	  background-repeat: no-repeat, 
+                       no-repeat,
+                       no-repeat,
+                       no-repeat;
+    background-size: cover, 
+                     80vw,
+                     20vw,
+                     100vw 50vh;;
   }
 }
 
