@@ -70,7 +70,7 @@ const Contact = () => {
                 <textarea name="message" placeholder='Message' required></textarea>
               </li>
               <li>
-                <input type="submit" className="flat-button text-[13px] py-2.5 px-5 mt-1" value="Send" />
+                <input type="submit" className="flat-button flat-button-mobile text-[13px] py-2.5 px-5 mt-1" value="Send" />
               </li>
             </ul>
           </form>

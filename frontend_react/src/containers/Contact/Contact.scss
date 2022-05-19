@@ -63,7 +63,7 @@
         font-size: 16px;
         color: #fff;
         padding: 20px;
-        min-height: 150px;
+        min-height: 180px;
         box-sizing: border-box;
     }
 
@@ -113,9 +113,21 @@
 
                 textarea 
                 {
-                    min-height: 120px;
+                    min-height: 150px;
                 }
             }
+        }
+    }
+}
+
+// Large screens
+@media (min-width: 992px)
+{
+    .contact-form
+    {
+        textarea 
+        {
+            min-height: 120px;
         }
     }
 }

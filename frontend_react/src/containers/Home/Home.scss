@@ -78,7 +78,8 @@
         animation: fadeIn 1s 1.5s backwards;
     }
 
-    .flat-button
+    .flat-button,
+    .flat-button-mobile
     {
         // display: inline-block;
         font-weight: 400;
@@ -98,6 +99,31 @@
             font-weight: 600;
         }
 
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    .flat-button
+    {
+        display: none;
+    }
+
+    .flat-button-mobile 
+    {
+        display: block;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    .flat-button
+    {
+        display: block;
+    }
+
+    .flat-button-mobile 
+    {
+        display: none;
     }
 }
 

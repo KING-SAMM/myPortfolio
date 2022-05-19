@@ -60,6 +60,8 @@ const Home = () => {
           Blockchain Engineer / Fullstack Developer / Tech Writer
         </h2>
         <Link to="/contact" className="flat-button text-[13px] py-2.5 px-5 mt-5 text-blue-400 ">Contact Me</Link>
+
+        <a href="#contact" className="flat-button-mobile text-[13px] py-2.5 px-5 mt-5 text-blue-400 ">Contact Me</a>
       </div>
     </div>
   )
