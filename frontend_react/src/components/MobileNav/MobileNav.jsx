@@ -30,15 +30,28 @@ const MobileNav = () => {
                     >
                         <HiX onClick={ () => setToggle(false) } />
                         <ul>
-                            {[ "home", "about", "skills", "contact" ].map(( item ) => (
+                            {/* Home is not part of the loop  */}
+                            <l1>
+                                <a 
+                                    href={ `#` }
+                                    // to="/"
+                                    onClick={ () => setToggle( false ) } 
+                                    className="text-2xl text-blue-100 font-normal hover:text-blue-50"    
+                                > 
+                                    home 
+                                </a>
+                            </l1>
+                            {/* Loop through other menu items  */}
+                            {[ " ", "about", "skills", "contact" ].map(( item ) => (
                                 <l1 key={ `${ item }` }>
-                                    <Link 
-                                        to={ `/${ item }` }
+                                    <a 
+                                        href={ `#${ item }` }
+                                        // to={ `/${ item }` }
                                         onClick={ () => setToggle( false ) } 
                                         className="text-2xl text-blue-100 font-normal hover:text-blue-50 "
                                     > 
                                         { item } 
-                                    </Link>
+                                    </a>
                                 </l1>
                             ))}
                         </ul>

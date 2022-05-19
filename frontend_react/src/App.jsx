@@ -10,15 +10,17 @@ const App = () => {
     <div className='app'>
       <div className='scroll'>
         <ScrollLayout />
-      </div>             
-      <Routes>
-        <Route path='/' element={ <Layout /> }>
-          <Route index element={ <Home /> } />
-          <Route path='/about' element={ <About /> } />
-          <Route path='/skills' element={ <Skills /> } />
-          <Route path='/contact' element={ <Contact /> } />
-        </Route>
-      </Routes>
+      </div>   
+      {/* <div className='fixed'> */}
+        <Routes>
+          <Route path='/' element={ <Layout /> } className='fixed'>
+            <Route index element={ <Home /> } />
+            <Route path='/about' element={ <About /> } />
+            <Route path='/skills' element={ <Skills /> } />
+            <Route path='/contact' element={ <Contact /> } />
+          </Route>
+        </Routes>
+      {/* </div>           */}
     </div>
   )
 }

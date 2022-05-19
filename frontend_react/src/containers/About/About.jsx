@@ -2,6 +2,7 @@ import './About.scss';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { useEffect, useState } from 'react';
 
+
 const About = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate');
  
@@ -16,7 +17,7 @@ const About = () => {
   }, [])
 
   return (
-    <div className='container about-page'>
+    <div id='about' className='container about-page'>
       <div className='main-text'>
         <h1>
           <AnimatedLetters

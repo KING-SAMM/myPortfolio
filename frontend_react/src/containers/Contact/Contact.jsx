@@ -44,7 +44,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='container contact-page'>
+    <div id='contact' className='container contact-page'>
       <div className="main-text">
         <h1>
           <AnimatedLetters 

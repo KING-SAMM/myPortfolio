@@ -78,13 +78,13 @@ body {
                     url('../src/assets/hand_touching_global_network03.jpg');
   background-position: center, 
                        88vw 1565px,
-                       center 2780px;;
+                       center 664vw;;
   background-repeat: no-repeat, 
                      no-repeat,
                      no-repeat;
   background-size: cover, 
                    20vw,
-                   contain;
+                   100vw;
 
   font: 300 11px/1.4 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -105,7 +105,7 @@ body {
     background-position: top center, 
                          -60vw 175vw,
                          75vw 265vw,
-                         0 350vw;
+                         0vw 405vw;
 	  background-repeat: no-repeat, 
                        no-repeat,
                        no-repeat,
@@ -113,7 +113,7 @@ body {
     background-size: cover, 
                      80vw,
                      20vw,
-                     100vw 50vh;;
+                     100vw;;
   }
 }
 

@@ -192,13 +192,13 @@
     {
         .central-wrapper
         {
-
+            margin-top: -300px;
             .main-text
             {
                 margin-left: 5%;
                 display: block;
                 margin: 0% auto;
-                margin-top: 90px;
+                margin-top: 0px;
                 margin-left: 8%;
                 // left: 8%;
                 width: 60%;
@@ -228,6 +228,7 @@
     {
         .central-wrapper
         {
+            margin-top: 0px;
             flex-direction: row;
             .main-text
             {
