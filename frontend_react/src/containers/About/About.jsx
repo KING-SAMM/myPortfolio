@@ -27,15 +27,10 @@ const About = () => {
           />
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga enim nulla laborum optio nihil ducimus! Commodi laudantium sed quisquam enim facere porro laborum quia, fugiat nemo officia sunt a voluptate ipsum.
+          I am a full stack developer and Web Development instructor. I have worked with Javascript-baswd technologies like Vue and React; and also Laravel and graphQL.
         </p>
-
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minus assumenda amet velit expedita accusamus.
-        </p>
-
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus minima ipsam nemo ad dolorum, rerum vero ea repellendus ullam nostrum?
+          Recently, I made a foray into blockchain development, particularly ethereum, and I am enjoying every bit of it.
         </p>
       </div>
     </div>

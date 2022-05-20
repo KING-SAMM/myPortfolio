@@ -3,6 +3,7 @@ import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { useEffect, useRef, useState } from 'react';
 import { FlatButton } from '../../components';
 import emailjs from '@emailjs/browser';
+import { Social } from '../../components';
 
 const Contact = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate');
@@ -77,6 +78,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <Social />
     </div>
   )
 }

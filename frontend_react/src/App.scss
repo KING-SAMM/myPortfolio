@@ -205,3 +205,35 @@ $blue-500: rgb(59 130 246);
   }
 }
 
+
+// Social icons on large screen
+
+@media screen and (min-width: 992px) 
+{
+    .social
+    {
+        display: block;
+        position: absolute;
+        right: -120px;
+        top: 8px;
+        z-index: 50;
+        
+
+        a
+        {
+            svg 
+            {
+                color: rgba(96, 165, 250, 0.4);
+
+                &:hover 
+                {
+                    color: rgba(219, 234, 254, 0.7);
+                    background: rgba(219, 234, 254, 0.2);
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                }
+            }
+
+        }
+    }
+}

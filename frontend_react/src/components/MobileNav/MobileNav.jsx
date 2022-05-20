@@ -25,14 +25,14 @@ const MobileNav = () => {
                             {[ "home", "about", "skills", "contact" ].map(( item ) => (
                                 <l1 key={ `${ item }` }>
                                     <Link
-                                        activeClass="active"
+                                        activeClass={`active`}
                                         to={ `${ item }` }
                                         spy={true}
                                         smooth={true}
-                                        offset={-70}
+                                        offset={10}
                                         duration={500}
                                         onClick={ () => setToggle( false ) } 
-                                        className="text-2xl text-blue-100 font-normal hover:text-blue-50"
+                                        className={`text-2xl text-blue-200 font-normal hover:text-blue-50`}
                                     >
                                         { item }
                                     </Link>

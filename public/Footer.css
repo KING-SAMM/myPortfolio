@@ -1,0 +1,19 @@
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section a i {
+  transition: all 0.3s ease-out;
+}
+
+.footer-section a:hover {
+  color: #dbeafe;
+}
+
+.footer-section a:hover svg {
+  padding: 15px;
+  color: #dbeafe;
+  border-radius: 50%;
+}
