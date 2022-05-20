@@ -7,10 +7,10 @@ import './ScrollLayout.scss';
 const ScrollLayout = () => {
   return (
     <>
-      <Home />
-      <About />
-      <Skills />
-      <Contact />
+      <Home id="home" />
+      <About id="about" />
+      <Skills id="skills" />
+      <Contact id="contact" />
       <Footer />
     </>
   )

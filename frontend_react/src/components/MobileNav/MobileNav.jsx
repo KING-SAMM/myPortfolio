@@ -2,7 +2,8 @@ import { useState } from 'react';
 import './MobileNav.scss';
 import { HiMenuAlt2, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const MobileNav = () => {
     const [toggle, setToggle] = useState(false);
@@ -20,28 +21,21 @@ const MobileNav = () => {
                     >
                         <HiX onClick={ () => setToggle(false) } />
                         <ul>
-                            {/* Home is not part of the loop  */}
-                            <l1>
-                                <a 
-                                    href={ `#` }
-                                    // to="/"
-                                    onClick={ () => setToggle( false ) } 
-                                    className="text-2xl text-blue-100 font-normal hover:text-blue-50"    
-                                > 
-                                    home 
-                                </a>
-                            </l1>
                             {/* Loop through other menu items  */}
-                            {[ " ", "about", "skills", "contact" ].map(( item ) => (
+                            {[ "home", "about", "skills", "contact" ].map(( item ) => (
                                 <l1 key={ `${ item }` }>
-                                    <a 
-                                        href={ `#${ item }` }
-                                        // to={ `/${ item }` }
+                                    <Link
+                                        activeClass="active"
+                                        to={ `${ item }` }
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}
                                         onClick={ () => setToggle( false ) } 
-                                        className="text-2xl text-blue-100 font-normal hover:text-blue-50 "
-                                    > 
-                                        { item } 
-                                    </a>
+                                        className="text-2xl text-blue-100 font-normal hover:text-blue-50"
+                                    >
+                                        { item }
+                                    </Link>
                                 </l1>
                             ))}
                         </ul>

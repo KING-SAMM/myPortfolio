@@ -67,8 +67,28 @@
         box-sizing: border-box;
     }
 
-    .flat-button
+    .submit-button
+    // .flat-button-mobile
     {
+        // display: inline-block;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        border: 1px solid rgb(96 165 250);
+        border-radius: 22px;
+        float: left;
+    
+        white-space: nowrap;
+        color: rgb(96 165 250);
+
+        &:hover 
+        {
+            background: rgb(96 165 250);
+            color: rgb(30 58 138);
+            font-weight: 600;
+        }
+        
         animation: fadeIn 1s 3s backwards;
     }
 }
