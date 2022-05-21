@@ -75,16 +75,19 @@ body {
   
   background-image: url('../src/assets/bg-blockchain02.jpg'), 
                     url('../src/assets/logo02.png'), 
-                    url('../src/assets/hand_touching_global_network03.jpg');
+                    url('../src/assets/hand_touching_global_network02.jpg');
   background-position: center, 
                        88vw 1565px,
-                       center 655vw;;
+                       center 303vh;
   background-repeat: no-repeat, 
                      no-repeat,
                      no-repeat;
   background-size: cover, 
                    20vw,
                    100vw;
+  background-clip: initial,
+                   initial,
+                   padding-box;
 
   font: 300 11px/1.4 "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
