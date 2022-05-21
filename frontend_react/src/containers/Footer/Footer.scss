@@ -1,31 +1,53 @@
 .footer-section 
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      
 
-    a
-    {
-
-        // Mode of transition  of icons
-        i
-        {
-            transition: all 0.3s ease-out;
-        }
-
-        // State of icons on hover of <NavLink />
-        &:hover 
-        {
-            color: rgba(219, 234, 254, 1.0);
-
-            svg 
-            {
-                padding: 15px;
-                color: rgba(219, 234, 254, 1.0);
-                border-radius: 50%;
-                // opacity: 0;
-            }
-        }
-    }
+    // will-change: contents;
+    // height: 90%;
+    // min-height: 566px;
+    // position: absolute;
+    // opacity: 0;
+    // // top: 5%;
+    // margin: 0 auto;
+    
+             
 }
+
+// @media screen and (max-width: 991px)
+// {   
+//     .social__mobile
+//     {
+//             display: block;
+//             justify-content: center;
+//             align-items: center;
+//             z-index: 50;
+            
+
+//             a
+//             {
+//                 svg 
+//                 {
+//                     color: rgba(96, 165, 250, 1.0);
+
+//                     &:hover 
+//                     {
+//                         color: rgba(219, 234, 254, 0.7);
+//                         background: rgba(219, 234, 254, 0.2);
+//                         border-radius: 50%;
+//                         box-sizing: border-box;
+//                     }
+//                 }
+
+//             }
+        
+
+//     }
+// }
+
+
+
+
+
+
+
 

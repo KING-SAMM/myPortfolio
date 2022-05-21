@@ -12,7 +12,7 @@ const Layout = () =>
         <div>
             <Sidebar />
             {/* <WatchDimensions /> */}
-            <div className="page w-full h-full absolute">
+            <div className="page">
                 <Outlet />
             </div>
             <MobileNav />

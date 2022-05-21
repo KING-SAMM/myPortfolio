@@ -11,7 +11,6 @@ const App = () => {
       <div className='scroll'>
         <ScrollLayout />
       </div>   
-      {/* <div className='fixed'> */}
         <Routes>
           <Route path='/' element={ <Layout /> } className='fixed'>
             <Route index element={ <Home /> } />
@@ -20,7 +19,6 @@ const App = () => {
             <Route path='/contact' element={ <Contact /> } />
           </Route>
         </Routes>
-      {/* </div>           */}
     </div>
   )
 }

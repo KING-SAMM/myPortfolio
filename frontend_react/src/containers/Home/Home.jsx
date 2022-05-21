@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import logoS from '../../assets/logoS.svg';
 import './Home.scss';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
-import { Social } from '../../components';
+import { Social, Copyright } from '../../components';
 
 
-const Home = () => {
+const Home = ({ social }) => {
   const [ letterClass, setLetterClass ] = useState('text-animate');
   const [ svgClass, setSvgClass ] = useState('');
   const nameArray = [ "a", "m", "m" ];
@@ -64,7 +64,8 @@ const Home = () => {
 
         <a href="#contact" className="flat-button-mobile text-[13px] py-2.5 px-5 mt-5 text-blue-400 ">Contact Me</a>
       </div>
-      <Social />
+      <Social socialClass="social__desktop" />
+      <Copyright copyClass="copy__desktop" />
     </div>
   )
 }
