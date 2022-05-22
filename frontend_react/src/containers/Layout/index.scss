@@ -54,16 +54,6 @@
     margin: -1vh 0;
 }
 
-// Medium screen
-@media (min-width: 768px)
-{  
-    .home-page
-    {
-        margin: 5vw 0;
-    }
-}
-
-
 // Turn off outmost div margins om large screen
 @media (min-width: 992px)
 {
@@ -83,15 +73,6 @@
 
 }
 
-// Medium screen
-@media (min-width: 768px)
-{
-    .about-page
-    {
-        margin: 145vw 0;
-    }
-}
-
 // Turn off outmost div margins om large screen
 @media (min-width: 992px)
 {
@@ -107,14 +88,6 @@
 .skills-page
 {
     margin: 201vh 0;
-}
-// Medium screen
-@media (min-width: 768px)
-{
-    .skills-page
-    {
-        margin: 290vw 0;
-    }
 }
 
 // Turn off outmost div margins om large screen
@@ -134,15 +107,6 @@
     margin: 302vh 0;
 }
 
-// Medium screen
-@media (min-width: 768px)
-{
-    .contact-page
-    {
-        margin: 435vw 0;
-    }
-}
-
 // Turn off outmost div margins om large screen
 @media (min-width: 992px)
 {
@@ -157,15 +121,6 @@
 .footer-section
 {
     margin: 403vh 0;
-}
-
-// Medium screen
-@media (min-width: 768px)
-{
-    .footer-section
-    {
-        margin: 475vw 0;
-    }
 }
 
 // Turn off outmost div margins om large screen
