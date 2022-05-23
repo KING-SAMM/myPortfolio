@@ -32,59 +32,54 @@ const Skills = () => {
           </h1>
 
           <div className="skills-list">
-            <div className="skills-list__left">
-              <div className="">
+              <div className="solidity">
                 <SiSolidity className="text-gray-500" />
                 <span>Solidity</span>
               </div>
-              <div className="">
-                <RiHtml5Fill className="text-[#F06529]" />
-                <span>HTML 5</span>
-              </div>
-              <div className="">
-                <RiCss3Fill className="text-[#28A4D9]" />
-                <span>CSS 3</span>
-              </div>
-              <div className="">
-                <SiJavascript className="text-yellow-500" />
-                <span>Javascript</span>
-              </div>
-              <div className="">
-                <FaSass className="text-red-600" />
-                <span>Sass</span>
-              </div>
-              <div className="">
-                <SiTailwindcss className="text-blue-500" />
-                <span>Tailwind</span>
-              </div>
-            </div>
-
-            <div className="skills-list__right">
-              <div className="">
+              <div className="react">
                 <RiReactjsLine className="text-[#5ED4F4] animate__animated animate" />
                 <span>React</span>
               </div>
-              <div className="">
-                <FaNodeJs className="text-green-500" />
-                <span>Node</span>
-              </div>
-              <div className="">
-                <SiGraphql className="text-red-500" />
-                <span>GraphQL</span>
-              </div>
-              <div className="">
-                <SiMongodb className="text-green-700" />
-                <span>MongoDB</span>
-              </div>
-              <div className="">
+              <div className="typescript">
                 <SiTypescript className="text-blue-800" />
                 <span>Typescript</span>
               </div>
-              <div className="">
+              <div className="javascript">
+                <SiJavascript className="text-yellow-500" />
+                <span>Javascript</span>
+              </div>
+              <div className="node">
+                <FaNodeJs className="text-green-500" />
+                <span>Node</span>
+              </div>
+              <div className="html5">
+                <RiHtml5Fill className="text-[#F06529]" />
+                <span>HTML 5</span>
+              </div>
+              <div className="css3">
+                <RiCss3Fill className="text-[#28A4D9]" />
+                <span>CSS 3</span>
+              </div>
+              <div className="sass">
+                <FaSass className="text-red-600" />
+                <span>Sass</span>
+              </div>
+              <div className="tailwind">
+                <SiTailwindcss className="text-blue-500" />
+                <span>Tailwind</span>
+              </div>
+              <div className="graphql">
+                <SiGraphql className="text-red-500" />
+                <span>GraphQL</span>
+              </div>
+              <div className="mongodb">
+                <SiMongodb className="text-green-700" />
+                <span>MongoDB</span>
+              </div>
+              <div className="php">
                 <FaPhp className="text-blue-500" />
                 <span>PHP</span>
               </div>
-            </div>
           </div>
         </div>
 

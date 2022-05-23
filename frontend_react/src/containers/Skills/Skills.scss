@@ -11,13 +11,14 @@
         width: 100%;
         margin: 0px auto;
         margin-bottom: 119px;
+        margin-top: -230px;
 
         // Main text
         .main-text
         {    
             // position: absolute;
             // margin-top: 80px;
-            margin: 0px auto;
+            // margin: 0px auto;
             margin-bottom: 100px;
             left: 5%;
             // top: 100px;
@@ -26,6 +27,11 @@
             vertical-align: middle;
             // display: table-cell;
             max-height: 90%;
+
+            &:nth-last-of-type(2)
+            {
+                margin: 0 auto;
+            }
             
     
             h1 
@@ -34,53 +40,60 @@
                 font-family: 'Coolvetica';
                 color: rgb(96 165 250);
                 font-weight: 400;
-                margin-top: 0;
+                margin-top: 137px;
+                
                 position: relative;
                 margin-bottom: 30px;
                 left: 10px;
+
+                @media (min-width: 375px)
+                {
+                    margin-top: 292px
+                }
+                @media (min-width: 390px)
+                {
+                    margin-top: 177px
+                }
+                @media (min-width: 414px)
+                {
+                    margin-top: 187px
+                }
+                
             }
-    
-            .skills-list 
+
+            .skills-list
             {
-                display: flex;
-                flex-direction: row;
-                // background-color: aqua;
-                justify-content: space-between;
-                padding: 0px 5px;
-    
-                .skills-list__left, .skills-list__right
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                row-gap: 10px;
+                
+                color: white;
+
+                .solidity,
+                .react,
+                .html5,
+                .css3,
+                .javascript,
+                .sass,
+                .php,
+                .node,
+                .mongodb,
+                .graphql,
+                .typescript,
+                .tailwind
                 {
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    // justify-content: center;
-                    // align-items: center;
-                    width: 40%;
+                    place-self: center;
                 }
-    
-                .skills-list__left div, .skills-list__right div
-                {
-                    display: flex;
-                    // justify-content: center;
-                    align-items: center;
-                    margin-bottom: 20px;
-                }
-    
-                .skills-list__left span, .skills-list__right span
-                {
-                    float: left;
-                    padding-left: 10px;
-                    font-size: 13px;
-                    color: white;
-                }
-    
+
+                
                 svg
                 {
                     font-size: large;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
                 }
-    
-            }
-    
+            }    
         }
     
         .text-animate-hover
@@ -98,6 +111,7 @@
             margin-left: 5%;
             display: block;
             margin: 0% auto;
+            margin-top: 150px;
             // left: 5%;
             // top: 100px;
             // transform: translateY(-50%);
@@ -105,6 +119,16 @@
             // vertical-align: middle;
             // display: table-cell;
             max-height: 90%;
+
+            @media (min-width: 375px)
+            {
+                margin-top: 90px
+            }
+            @media (min-width: 414px)
+            {
+                margin-top: 150px
+            }
+             
     
             svg 
             {
@@ -205,6 +229,7 @@
                 h1 
                 {
                     font-size: 48px;
+                    margin-left: -20%;
                 }
     
                 .skills-list
@@ -255,89 +280,80 @@
                 margin-left: 10%;
                 // left: 10%;
                 width: 50%;
+
+                h1 
+                {
+                    margin-left: 15%;
+                }
     
                 .skills-list
                 {
-                    display: flex;
-                    flex-direction: row;
-                    // background-color: aqua;
-                    justify-content: flex-start;
-                    width: auto;
+                    grid-row-gap: 20px;
+
+                    padding-left: 5%;
                     svg
                     {
                         font-size: xx-large;
                     }
     
-                    // Fade in left skills list
-                    .skills-list__left 
+                    // Fade in skills list items
+                    div 
                     {
-                        div 
+                        animation: fadeIn 1s backwards;
+                        
+                        &:nth-of-type(1)
                         {
-                            animation: fadeIn 1s backwards;
-                           
-                            &:nth-of-type(1)
-                            {
-                                animation-delay: 1.8s;
-                            }
-    
-                            &:nth-of-type(2)
-                            {
-                                animation-delay: 2.0s;
-                            }
-    
-                            &:nth-of-type(3)
-                            {
-                                animation-delay: 2.2s;
-                            }
-                            &:nth-of-type(4)
-                            {
-                                animation-delay: 2.4s;
-                            }
-                            &:nth-of-type(5)
-                            {
-                                animation-delay: 2.6s;
-                            }
-                            &:nth-of-type(6)
-                            {
-                                animation-delay: 2.8s;
-                            }
+                            animation-delay: 1.8s;
                         }
-                    }
-    
-                    // Fade in right skills list
-                    .skills-list__right 
-                    {
-                        div 
+
+                        &:nth-of-type(2)
                         {
-                            animation: fadeIn 1s backwards;
-    
-                            &:nth-of-type(1)
-                            {
-                                animation-delay: 3.0s;
-                            }
-    
-                            &:nth-of-type(2)
-                            {
-                                animation-delay: 3.2s;
-                            }
-                            &:nth-of-type(3)
-                            {
-                                animation-delay: 3.4s;
-                            }
-                            &:nth-of-type(4)
-                            {
-                                animation-delay: 3.6s;
-                            }
-                            &:nth-of-type(5)
-                            {
-                                animation-delay: 3.8s;
-                            }
-                            &:nth-of-type(6)
-                            {
-                                animation-delay: 4.0s;
-                            }
+                            animation-delay: 2.4s;  
                         }
-                    }
+
+                        &:nth-of-type(3)
+                        {
+                            animation-delay: 3.2s; 
+                        }
+                        &:nth-of-type(4)
+                        {
+                            animation-delay: 2.0s;  
+                        }
+                        &:nth-of-type(5)
+                        {
+                            animation-delay: 2.6s; 
+                        }
+                        &:nth-of-type(6)
+                        {
+                            animation-delay: 3.4s; 
+                        }
+                        &:nth-of-type(7)
+                        {
+                            animation-delay: 2.2s; 
+                        }
+
+                        &:nth-of-type(8)
+                        {
+                            animation-delay: 2.8s; 
+                        }
+                        &:nth-of-type(9)
+                        {
+                            animation-delay: 3.8s; 
+                        }
+                        &:nth-of-type(10)
+                        {
+                            animation-delay: 2.4s;  
+                        }
+                        &:nth-of-type(11)
+                        {
+                            animation-delay: 3.0s; 
+                        }
+                        &:nth-of-type(12)
+                        {
+                            animation-delay: 4.0s;
+                        }
+                    }            
+                   
                 }
             }
         }
@@ -358,10 +374,11 @@
     
             .cube-container
             {
-                padding-top: 18%;
+                padding-top: 15%;
                 
                 display: flex;
                 justify-content: center;
+            
                 
         
                 svg 
