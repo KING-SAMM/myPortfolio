@@ -219,6 +219,26 @@
         
     }
 }
+@media (min-width: 820px)
+{ 
+    .skills-page
+    {
+        .central-wrapper
+        {
+            margin-top: -230px;
+        }
+    }
+}
+@media (min-width: 912px)
+{ 
+    .skills-page
+    {
+        .central-wrapper
+        {
+            margin-top: -400px;
+        }
+    }
+}
 
 // Main text for large screens
 @media (min-width: 992px)
