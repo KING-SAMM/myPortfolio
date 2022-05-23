@@ -33,6 +33,10 @@ const About = () => {
           Recently, I made a foray into blockchain development, particularly ethereum, and I am enjoying every bit of it.
         </p>
       </div>
+      <div className="image">
+        <img src="../../assets/logo01.png" alt="Glowing sircle background" />
+        <img src="../.../assets/kc-samm5.png" alt="KC Samm" />
+      </div>
     </div>
   )
 }
