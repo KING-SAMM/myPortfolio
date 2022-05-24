@@ -18,6 +18,14 @@ import hand_touching_global_network03 from '../assets/hand_touching_global_netwo
 import hand_touching_global_network04 from '../assets/hand_touching_global_network04.jpg';
 
 
+import kc_samm1 from '../assets/kc_samm1.png';
+import kc_samm2 from '../assets/kc_samm2.png';
+import kc_samm3 from '../assets/kc_samm3.png';
+import kc_samm4 from '../assets/kc_samm4.png';
+import kc_samm5 from '../assets/kc_samm5.png';
+
+
+
 
 export default 
 {
@@ -25,6 +33,11 @@ export default
     logo01,
     logo02,
     web_dev,
+    kc_samm1,
+    kc_samm2,
+    kc_samm3,
+    kc_samm4,
+    kc_samm5,
     bg_blockchain,
     bg_blockchain02,
     bg_blockchain03,

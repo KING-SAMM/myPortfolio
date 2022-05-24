@@ -66,6 +66,9 @@ const Home = ({ social }) => {
       </div>
       <Social socialClass="social__desktop" />
       <Copyright copyClass="copy__desktop" />
+      <div className="image">
+        
+      </div>
     </div>
   )
 }

@@ -128,6 +128,21 @@ body {
 
 
 
+.about-page .image
+{
+  background-image: url('../src/assets/kc_samm5.png');
+}
+
+
+.home-page .image
+{
+  background-image: url('../src/assets/kc_samm1.png');
+}
+
+
+
+
+
 
 @tailwind base;
 @tailwind components;

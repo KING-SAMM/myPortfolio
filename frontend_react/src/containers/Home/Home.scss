@@ -131,3 +131,77 @@
         flex-direction: row;
     }    
 }
+
+
+
+// Homepage image styling
+.home-page
+{
+    flex-direction: column;
+}
+
+.home-page .image
+{
+    // z-index: 10px;
+    margin-top: 450px;
+    width: 55vw;
+    height: 55vw;
+
+    
+    background: rgb(39, 51, 89, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 67vw;
+
+    animation: fadeIn 1s 2.0s backwards;
+}
+
+// Remove image from dom on medium and small devices
+@media (max-width: 991px)
+{
+    .home-page .image
+    {
+        display: none;
+    }
+}
+
+// Display homempage image on large devices
+@media (min-width: 992px)
+{
+    .home-page
+    {
+        flex-direction: row;
+        .image 
+        {
+            position: absolute;
+            margin-top: 120px;
+            top: auto;
+            right: 10vw;
+            width: 34vw;
+            height: 34vw;
+
+            background-size: 32vw;
+        }
+    }
+}
+
+// Hpmepage image on extra-large devices
+@media (min-width: 1200px)
+{
+    .home-page
+    {
+   
+        .image 
+        {
+            margin-top: 100px;;
+            right: 4vw;
+        }
+    }
+}
