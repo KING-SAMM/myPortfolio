@@ -25,7 +25,7 @@ nav
             width: 34px;
             height: auto;
 
-            &.sub-logo
+            .sub-logo
             {
                 width: 60px;
             }
@@ -121,7 +121,7 @@ nav
             }
 
             // About <NavLink />
-            a.about-link 
+            .about-link 
             {
                 // Pseudo element of about link icon 
                 &::after
@@ -132,7 +132,7 @@ nav
             }
 
             // Skills <NavLink />
-            a.skills-link 
+            .skills-link 
             {
                 // Pseudo element of skills link icon 
                 &::after
@@ -143,7 +143,7 @@ nav
             }
 
             // Contact <NavLink />
-            a.contact-link 
+            .contact-link 
             {
                 // Pseudo element of contact link icon
                 &::after
@@ -154,7 +154,7 @@ nav
             }
 
             // State of icons when link is active
-            a.active 
+            .active 
             {
                 svg 
                 {

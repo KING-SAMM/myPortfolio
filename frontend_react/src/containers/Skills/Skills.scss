@@ -83,6 +83,8 @@
                 .typescript,
                 .tailwind
                 {
+                    -webkit-place-self: center;
+                    -moz-place-self: center;
                     place-self: center;
                 }
 
@@ -141,6 +143,7 @@
                 animation-name: spincube;
                 animation-timing-function: ease-in-out;
                 -webkit-animation-iteration-count: infinite;
+                -moz-animation-iteration-count: infinite;
                 animation-iteration-count: infinite;
                 animation-duration: 12s;
     
@@ -288,7 +291,7 @@
     
                 .skills-list
                 {
-                    grid-row-gap: 20px;
+                    row-gap: 20px;
 
                     padding-left: 5%;
                     svg

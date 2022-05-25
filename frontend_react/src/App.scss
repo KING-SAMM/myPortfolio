@@ -96,6 +96,7 @@ $blue-500: rgb(59 130 246);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -105,6 +106,7 @@ $blue-500: rgb(59 130 246);
   border-radius: 16px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -113,6 +115,7 @@ $blue-500: rgb(59 130 246);
   background-color: #fff;
   background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -138,6 +141,7 @@ $blue-500: rgb(59 130 246);
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
   border: 1px solid  rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
@@ -152,7 +156,7 @@ $blue-500: rgb(59 130 246);
 
   @media screen and (max-width: 450px)
   {
-    paddong: 4rem 1rem 2rem;
+    padding: 4rem 1rem 2rem;
   }
 }
 
@@ -303,7 +307,7 @@ $blue-500: rgb(59 130 246);
   {
     display: block !important;
     right: 6%;
-    bottom: -6vh;
+    bottom: 2vh;
   }
 }
 
