@@ -6,7 +6,7 @@ import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { Social, Copyright } from '../../components';
 
 
-const Home = ({ social }) => {
+const Home = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate');
   const [ svgClass, setSvgClass ] = useState('');
   const nameArray = [ "a", "m", "m" ];
@@ -67,7 +67,7 @@ const Home = ({ social }) => {
       <Social socialClass="social__desktop" />
       <Copyright copyClass="copy__desktop" />
       <div className="image">
-        
+      
       </div>
     </div>
   )

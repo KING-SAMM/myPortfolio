@@ -7,14 +7,14 @@
     display: flex;
     justify-content: flex-end;
     // align-items: center;
-    margin-left: 70%;
+    margin-left: 70%; //margin-left: 70%
     padding: 1rem 2rem;
     // background: rgba(255, 255, 255, 0.25);
     // backdrop-filter: blur(4px);
     // -webkit-backdrop-filter: blur(4px);
     // border: 1px slid rgba(255, 255, 255, 0.18);
     position: fixed;
-    z-index: 2;
+    z-index: 888;
 
     @media (min-width: 992px)
     {

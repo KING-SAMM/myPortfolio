@@ -8,9 +8,9 @@ const App = () => {
 
   return (
     <div className='app'>
-      <div className='scroll'>
-        <ScrollLayout />
-      </div>   
+    
+        <ScrollLayout scrollClass="scroll" />
+      
         <Routes>
           <Route path='/' element={ <Layout /> } className='fixed'>
             <Route index element={ <Home /> } />

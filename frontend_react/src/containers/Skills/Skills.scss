@@ -11,7 +11,7 @@
         width: 100%;
         margin: 0px auto;
         margin-bottom: 119px;
-        margin-top: -230px;
+        margin-top: -490px;
 
         // Main text
         .main-text
@@ -211,6 +211,7 @@
 
 }
 
+
 // Main text for medium screens
 @media (min-width: 768px)
 {
@@ -218,7 +219,7 @@
     {
         .central-wrapper
         {
-            margin-top: -100px;
+            margin-top: -280px;
             .main-text
             {
                 margin-left: 5%;
@@ -253,7 +254,7 @@
     {
         .central-wrapper
         {
-            margin-top: -230px;
+            margin-top: -450px;
         }
     }
 }
@@ -275,7 +276,7 @@
     {
         .central-wrapper
         {
-            margin-top: 0px;
+            margin-top: -80px;
             flex-direction: row;
             .main-text
             {
@@ -286,7 +287,7 @@
 
                 h1 
                 {
-                    margin-left: 15%;
+                    margin-left: 20%;
                 }
     
                 .skills-list
@@ -363,6 +364,19 @@
     }
 }
 
+// Main text for extra large screens
+@media (min-width: 1200px)
+{
+    .skills-page
+    {
+        .central-wrapper
+        {
+            margin-top: -120px;
+        }
+        
+    }
+}
+
 
 
 // Cube Container for medium screens
@@ -380,10 +394,8 @@
                 padding-top: 15%;
                 
                 display: flex;
-                justify-content: center;
-            
-                
-        
+                // justify-content: center;
+
                 svg 
                 {
                     font-size: x-large;
@@ -420,6 +432,7 @@
         // overflow: hidden;
         position: relative;
         left: -15%;
+        justify-content: center;
 
 
         svg 

@@ -78,7 +78,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <Social />
     </div>
   )
 }

@@ -116,21 +116,6 @@
     }
 }
 
-@media screen and (max-width: 991px)  
-{
-    .social
-    {
-        display: none;
-    }    
-}
-@media screen and (min-width: 992px)  
-{
-    .social
-    {
-        display: flex;
-        flex-direction: row;
-    }    
-}
 
 
 
@@ -197,7 +182,6 @@
 {
     .home-page
     {
-   
         .image 
         {
             margin-top: 100px;;

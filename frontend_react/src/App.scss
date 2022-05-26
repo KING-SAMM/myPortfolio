@@ -76,13 +76,6 @@ $blue-500: rgb(59 130 246);
     radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
 }
 
-/* .gradient-bg-transactions {
-  background-color: #0f0e13;
-  background-image: 
-    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
-} */
-
 .gradient-bg-footer {
   background-color: #0f0e13;
   background-image: 
@@ -217,6 +210,7 @@ $blue-500: rgb(59 130 246);
   @media screen and (min-width: 992px) 
   {
     display: none !important;
+    opacity: 0 !important;
   }
 
   @media screen and (max-width: 991px) 
@@ -235,7 +229,7 @@ $blue-500: rgb(59 130 246);
         &:hover 
         {
             color: rgba(219, 234, 254, 0.7);
-            background: rgba(219, 234, 254, 0.2);
+            // background: rgba(219, 234, 254, 0.2);
             border-radius: 50%;
             box-sizing: border-box;
         }
@@ -250,6 +244,7 @@ $blue-500: rgb(59 130 246);
   @media screen and (max-width: 991px) 
   {
     display: none !important;
+    opacity: 0 !important;
   }
 
   @media screen and (min-width: 992px) 
@@ -271,7 +266,7 @@ $blue-500: rgb(59 130 246);
           &:hover 
           {
               color: rgba(219, 234, 254, 0.7);
-              background: rgba(219, 234, 254, 0.2);
+              // background: rgba(219, 234, 254, 0.2);
               border-radius: 50%;
               box-sizing: border-box;
           }
