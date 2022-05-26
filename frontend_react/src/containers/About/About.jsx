@@ -27,33 +27,35 @@ const About = () => {
           />
         </h1>
         <p>
-          I am a full stack developer and Web Development instructor. I have worked with Javascript-baswd technologies like Vue and React; and also Laravel and graphQL.
+          I am a full stack developer and Web Development instructor. I have worked with Javascript-based technologies like Vue and React; and also Laravel and graphQL.
         </p>
         <p>
           Recently, I made a foray into blockchain development, particularly ethereum, and I am enjoying every bit of it.
         </p>
-        <h3 className='text-2xl'>
-          Work Experience
-        </h3>
-        <h4 className='text-[16px] my-1'>
-          CCIT Digital Solutions Ltd, Lagos
-        </h4>
-        <p className='italic font-thin text-xs'>
-          Web Design and Development Instructor
-        </p>
-         <p className='year text-white'>
+        <div className="grid">
+          <h3 className='work__experience text-2xl'>
+            Work Experience
+          </h3>
+          <h4 className='ccit text-[14px] my-1'>
+            CCIT Digital Solutions Ltd, Lagos
+          </h4>
+          <h5 className='ccit__portfolio italic font-thin text-[12px]'>
+            Web Design and Development Instructor
+          </h5>
+          <p className='year ccit__year text-white'>
            2019 - 2020
-         </p> 
+          </p> 
            
-        <h4 className='text-[16px] my-1'>
-          GoldTech ICT Hub Ltd, Lagos 
-        </h4>
-        <p className='italic font-thin text-xs'>
-          Web Design and Development Instructor
-        </p>
-         <p className='year text-white'>
+          <h4 className='goldtech text-[14px] my-1'>
+            GoldTech ICT Hub Ltd, Lagos 
+          </h4>
+          <h5 className='goldtech__portfolio italic font-thin text-[12px]'>
+            Web Design and Development Instructor
+          </h5>
+          <p className='year goldtech__year text-white'>
            2020 - 2022
-         </p> 
+          </p> 
+        </div>
            
       </div>
       <div className="image">

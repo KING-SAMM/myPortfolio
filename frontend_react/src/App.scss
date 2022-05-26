@@ -125,6 +125,7 @@ $blue-500: rgb(59 130 246);
 .app__container 
 {
   width: 100%;
+  min-height: 100vh;
 
   display: flex;
   justify-content: space-between;
@@ -153,14 +154,6 @@ $blue-500: rgb(59 130 246);
   }
 }
 
-
-.app__container {
-  width: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: row;
-}
 
 .app__flex {
   display: flex;

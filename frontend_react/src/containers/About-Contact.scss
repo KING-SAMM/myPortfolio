@@ -36,6 +36,11 @@
             color: rgb(96 165 250);
         }
 
+        h5 
+        {
+            color:rgb(219 234 254);
+        }
+
        p 
        {
         //    font-style: 13px;
@@ -56,16 +61,95 @@
            {
                animation-delay: 1.2s;
            }
+       }
 
-           &:nth-of-type(3)
+       .grid 
+       {
+           // Grid animations
+           animation: pulse 1s;
+
+           &:nth-child(1)
            {
                animation-delay: 1.3s;
            }
+           &:nth-child(2)
+           {
+               animation-delay: 1.4s;
+           }
+           &:nth-child(3)
+           {
+               animation-delay: 1.4s;
+           }
+           &:nth-child(4)
+           {
+               animation-delay: 1.5s;
+           }
+           &:nth-child(5)
+           {
+               animation-delay: 1.5s;
+           }
+           
+           // Grid specifications
+           .work__experience
+           {
+               grid-area: work__experience;
+           }
+           .ccit
+           {
+               grid-area: ccit;
+           }
+           .ccit__year
+           {
+               grid-area: ccit__year;
+           }
+           .ccit__portfolio
+           {
+               grid-area: ccit__portfolio;
+           }
+           .goldtech
+           {
+               grid-area: goldtech;
+           }
+           .goldtech__portfolio
+           {
+               grid-area: goldtech__portfolio;
+           }
+           .goldtech__year
+           {
+               grid-area: goldtech__year;
+           }
+
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: auto;
+           grid-row-gap: 5px;
+           grid-template-areas: 
+           "work__experience"
+           "ccit"
+           "ccit__portfolio"
+           "ccit__year"
+           "goldtech"
+           "goldtech__portfolio"
+           "goldtech__year";
+           
+           @media (min-width: 992px)
+           {
+               grid-gap: 5px 10px;
+               grid-template-areas: 
+
+               "work__experience work__experience"
+               "ccit goldtech"
+               "ccit__portfolio goldtech__portfolio"
+               "ccit__year goldtech__year";
+           }
+
+
+
        }
 
        .year 
        {
-           font-size: 13px;
+           font-size: 12px;
        }
     }
 
@@ -91,7 +175,7 @@
         .main-text
         {
             left: 8%;
-            width: 60%;
+            width: 65%;
 
             h1 
             {
