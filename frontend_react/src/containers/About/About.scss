@@ -17,8 +17,6 @@
     
     width: 55vw;
     height: 55vw;
-
-    margin: 0 auto;
     
     background: rgb(39, 51, 89, 0.4);
     // border-radius: 16px;
@@ -34,12 +32,14 @@
 
     animation: fadeIn 1s 2.0s backwards;
 
+    // Portrait
     @media screen and (max-width: 912px) and (orientation: portrait)
     {
         position: absolute;
         top: 640px;
     }
 
+    // Landscape
     @media screen and (max-width: 991px) and (orientation: landscape)
     {
         position: absolute;
@@ -47,7 +47,7 @@
     }
 }
 
-
+// LArge screens
 @media (min-width: 992px)
 {
     .about-page
@@ -70,7 +70,10 @@
 }
 
 
-@media (max-width:991px)
+@media screen and (max-width:740px) and (orientation: landscape)
 {
-
+    .about-page
+    {
+        
+    }
 }
