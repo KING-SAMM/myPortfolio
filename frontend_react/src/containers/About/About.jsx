@@ -17,7 +17,7 @@ const About = () => {
   }, [])
 
   return (
-    <div id='about' className='container about-page h-full md:w-full'>
+    <div id='about' className='container about-page md:w-full'>
       <div className='main-text'>
         <h1>
           <AnimatedLetters

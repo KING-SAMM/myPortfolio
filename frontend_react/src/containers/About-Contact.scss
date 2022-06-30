@@ -131,8 +131,9 @@
            "goldtech"
            "goldtech__portfolio"
            "goldtech__year";
-           
-           @media (min-width: 992px)
+   
+           // Medium and Large screens
+           @media (min-width: 768px)
            {
                grid-gap: 5px 10px;
                grid-template-areas: 
