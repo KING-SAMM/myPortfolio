@@ -141,7 +141,7 @@ body {
 }
 
 
-/* Landscape view for smart phones  */
+/* Landscape view for small screens  */
 @media screen and (max-width: 896px) and (orientation: landscape)
 {
   body
@@ -153,7 +153,50 @@ body {
     background-position: top center, 
                          -70vw 180vh,
                          75vw 455vh,
-                         0vw 692vh;
+                         0vw 772vh;
+  }
+}
+
+/* Portrait view for extra smart phones  */
+@media screen and (max-width: 389px) and (orientation: portrait)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 180vh,
+                         90vw 225vh,
+                         -20vw 342vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+/* Landscape view for extra small screens  */
+@media screen and (max-width: 740px) and (orientation: landscape)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: top center, 
+                         -90vw 180vh,
+                         75vw 470vh,
+                         0vw 740vh;
+    background-size: cover, 
+                         80vw,
+                         20vw,
+                         100vw;
   }
 }
 

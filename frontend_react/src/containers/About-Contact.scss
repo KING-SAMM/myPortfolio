@@ -89,7 +89,7 @@
                animation-delay: 1.5s;
            }
            
-           // Grid specifications
+           // Grid specifications / areas
            .work__experience
            {
                grid-area: work__experience;
@@ -134,6 +134,18 @@
    
            // Medium and Large screens
            @media (min-width: 768px)
+           {
+               grid-gap: 5px 10px;
+               grid-template-areas: 
+
+               "work__experience work__experience"
+               "ccit goldtech"
+               "ccit__portfolio goldtech__portfolio"
+               "ccit__year goldtech__year";
+           }
+
+           // Landscaoe on extra small screens
+           @media screen and (max-width: 740px) and (orientation: landscape)
            {
                grid-gap: 5px 10px;
                grid-template-areas: 

@@ -116,7 +116,13 @@
 
     @media (orientation: landscape)
     {
-        margin: 600vh 0;
+        margin: 580vh 0;
+    }
+
+    // Extra small screens
+    @media (max-width: 389px)
+    {
+        margin: 240vh 0;
     }
 }
 
@@ -138,7 +144,19 @@
 
     @media (orientation: landscape)
     {
-        margin: 700vh 0;
+        margin: 780vh 0;
+    }
+
+    // Extra small screens
+    @media (max-width: 389px)
+    {
+        margin: 340vh 0;
+    }
+
+    // Extra small screens landscape
+    @media screen and (max-width: 740px) and (orientation: landscape)
+    {
+        margin: 743vh 0;
     }
 }
 
