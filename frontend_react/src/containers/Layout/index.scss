@@ -17,8 +17,14 @@
     margin: 0 auto;
     // z-index: 1;
     transform-style: preserve-3d;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 1s forwards; 
     animation-delay: 1s;
+
+    // Container on mobile landscpae
+    @media (orientation: landscpae)
+    {
+        height: auto;
+    }
    
     // Container on medium screens
     @media (min-width: 768px)
@@ -67,7 +73,7 @@
 }
 
 
-// Turn off outmost div margins om large screen
+// Turn off outmost div margins on large screen
 @media (min-width: 992px)
 {
     .home-page
@@ -83,6 +89,11 @@
 .about-page
 {
     margin: 100vh 0;
+
+    @media (orientation: landscape)
+    {
+        margin: 200vh 0;
+    }
 
 }
 
@@ -102,6 +113,11 @@
 .skills-page
 {
     margin: 201vh 0;
+
+    @media (orientation: landscape)
+    {
+        margin: 500vh 0;
+    }
 }
 
 // Turn off outmost div margins om large screen
@@ -119,6 +135,11 @@
 .contact-page
 {
     margin: 302vh 0;
+
+    @media (orientation: landscape)
+    {
+        margin: 700vh 0;
+    }
 }
 
 
@@ -136,6 +157,11 @@
 .footer-section
 {
     margin: 403vh 0;
+
+    @media (orientation: landscape)
+    {
+        margin: 900vh 0;
+    }
 }
 
 

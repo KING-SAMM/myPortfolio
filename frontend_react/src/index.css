@@ -91,6 +91,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 /* Medium screen background image  */
 @media (min-width: 768px)
 {
@@ -140,7 +141,21 @@ body {
 }
 
 
-
+/* Landscape view for smart phones  */
+@media screen and (max-width: 896px) and (orientation: landscape)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: top center, 
+                         -70vw 180vh,
+                         75vw 378vh,
+                         0vw 692vh;
+  }
+}
 
 
 

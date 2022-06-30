@@ -58,7 +58,7 @@ const Home = () => {
 
         </h1>
         <h2 className="text-blue-400 mt-[20px] text-sm">
-          Blockchain Engineer / Fullstack Developer / Tech Writer
+          Blockchain Engineer / Fullstack Engineer / Tech Writer
         </h2>
         <Link to="/contact" className="flat-button text-[13px] py-2.5 px-5 mt-5 text-blue-400 ">Contact Me</Link>
 
