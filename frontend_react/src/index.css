@@ -73,12 +73,12 @@ body {
   background: rgb(1, 10, 39);
   background-image: linear-gradient(120deg, rgb(0, 5, 20), rgb(1, 10, 39), rgb(6, 21, 63));
   
-  background-image: url('../src/assets/bg-blockchain02.jpg'), 
+  background-image: url('../src/assets/bg-blockchain.jpg'), 
                     url('../src/assets/logo02.png'), 
                     url('../src/assets/hand_touching_global_network02.jpg');
   background-position: center, 
                        88vw 187vh,
-                       center 303vh;
+                       center 203vh;
   background-repeat: no-repeat, 
                      no-repeat,
                      no-repeat;
@@ -128,25 +128,90 @@ body {
 }
 
 
-
+/* About page profile image  */
 .about-page .image
 {
   background-image: url('../src/assets/kc_samm5.png');
 }
 
-
+/* Home page profile image  */
 .home-page .image
 {
   background-image: url('../src/assets/kc_samm1.png');
 }
 
 
-/* Landscape view for small screens  */
+/* Portrait view for small screens: 540px  */
+@media screen and (max-width: 541px) and (orientation: portrait)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 180vh,
+                         90vw 225vh,
+                         -20vw 345vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+
+/* Portrait view for small screens: 414px  */
+@media screen and (max-width: 415px) and (orientation: portrait)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 180vh,
+                         90vw 200vh,
+                         -20vw 302vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+
+/* Landscape view for small screens: 915px  */
+@media screen and (max-width: 916px) and (orientation: landscape)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: top center, 
+                         -70vw 180vh,
+                         75vw 455vh,
+                         0vw 972vh;
+  }
+}
+
+
+/* Landscape view for small screens: 896px  */
 @media screen and (max-width: 896px) and (orientation: landscape)
 {
   body
   {
-    background-image: url('../src/assets/bg-blockchain.jpg'), 
+    background-image: url('../src/assets/bg-blockchain02.jpg'), 
                     url('../src/assets/logo02.png'),
                     url('../src/assets/logo02.png'),
                     url('../src/assets/hand_touching_global_network04.jpg');
@@ -157,21 +222,23 @@ body {
   }
 }
 
-/* Portrait view for extra smart phones  */
-@media screen and (max-width: 389px) and (orientation: portrait)
+
+
+/* Portrait view for extra small screens: 393px  */
+@media screen and (max-width: 394px) and (orientation: portrait)
 {
   body
   {
     background-image: 
-                    url('../src/assets/bg-blockchain.jpg'), 
+                    url('../src/assets/bg-blockchain02.jpg'), 
                     url('../src/assets/logo02.png'),
                     url('../src/assets/logo02.png'),
                     url('../src/assets/hand_touching_global_network04.jpg');
     background-position: 
                          top center, 
                          -100vw 180vh,
-                         90vw 225vh,
-                         -20vw 342vh;
+                         90vw 200vh,
+                         -20vw 302vh;
     background-size: cover, 
                       80vw,
                       20vw,
@@ -180,12 +247,37 @@ body {
   }
 }
 
+
+/* Portrait view for extra small screens: 375px  */
+@media screen and (max-width: 376px) and (orientation: portrait)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 180vh,
+                         90vw 225vh,
+                         -20vw 345vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+
 /* Landscape view for extra small screens  */
 @media screen and (max-width: 740px) and (orientation: landscape)
 {
   body
   {
-    background-image: url('../src/assets/bg-blockchain.jpg'), 
+    background-image: url('../src/assets/bg-blockchain02.jpg'), 
                     url('../src/assets/logo02.png'),
                     url('../src/assets/logo02.png'),
                     url('../src/assets/hand_touching_global_network04.jpg');
@@ -199,6 +291,7 @@ body {
                          100vw;
   }
 }
+
 
 
 

@@ -39,6 +39,12 @@
         top: 640px;
     }
 
+    // Portrait extra small screens
+    @media screen and (max-width: 280px) and (orientation: portrait)
+    {
+        top: 685px;
+    }
+
     // Landscape
     @media screen and (max-width: 991px) and (orientation: landscape)
     {
