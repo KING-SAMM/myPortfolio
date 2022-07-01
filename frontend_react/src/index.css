@@ -199,9 +199,9 @@ body {
                     url('../src/assets/logo02.png'),
                     url('../src/assets/hand_touching_global_network04.jpg');
     background-position: top center, 
-                         -70vw 180vh,
-                         75vw 455vh,
-                         0vw 972vh;
+                         -70vw 80vh,
+                         75vw 365vh,
+                         0vw 632vh;
   }
 }
 
@@ -216,9 +216,9 @@ body {
                     url('../src/assets/logo02.png'),
                     url('../src/assets/hand_touching_global_network04.jpg');
     background-position: top center, 
-                         -70vw 180vh,
-                         75vw 455vh,
-                         0vw 772vh;
+                         -70vw 80vh,
+                         75vw 365vh,
+                         0vw 632vh;
   }
 }
 
@@ -283,12 +283,71 @@ body {
                     url('../src/assets/hand_touching_global_network04.jpg');
     background-position: top center, 
                          -90vw 180vh,
-                         75vw 470vh,
-                         0vw 740vh;
+                         75vw 380vh,
+                         0vw 623vh;
     background-size: cover, 
                          80vw,
                          20vw,
                          100vw;
+  }
+}
+
+
+/* Landscape view for small screens: 720px  */
+@media screen and (max-width: 721px) and (orientation: landscape)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: top center, 
+                         -70vw 80vh,
+                         75vw 265vh,
+                         0vw 442vh;
+  }
+}
+
+
+/* Landscape view for extra small screens: 667px */
+@media screen and (max-width: 668px) and (orientation: landscape)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: top center, 
+                         -90vw 180vh,
+                         75vw 320vh,
+                         0vw 550vh;
+    background-size: cover, 
+                         80vw,
+                         20vw,
+                         100vw;
+  }
+}
+
+
+/* Landscape view for extra small screens: 653px */
+@media screen and (max-width: 654px) and (orientation: landscape)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: top center, 
+                         -90vw 180vh,
+                         75vw 435vh,
+                         0vw 750vh;
+    background-size: 120vw, 
+                     80vw,
+                     20vw,
+                     100vw;
   }
 }
 
