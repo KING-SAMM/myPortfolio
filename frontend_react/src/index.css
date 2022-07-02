@@ -272,7 +272,55 @@ body {
 }
 
 
-/* Landscape view for extra small screens  */
+/* Portrait view for extra small screens: 360px  */
+@media screen and (max-width: 360px) and (orientation: portrait)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 180vh,
+                         90vw 245vh,
+                         -20vw 395vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+
+/* Portrait view for extra small screens: 280px  */
+@media screen and (max-width: 280px) and (orientation: portrait)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 180vh,
+                         90vw 225vh,
+                         -20vw 355vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+
+/* Landscape view for small screens 740px  */
 @media screen and (max-width: 740px) and (orientation: landscape)
 {
   body
@@ -345,6 +393,27 @@ body {
                          75vw 435vh,
                          0vw 750vh;
     background-size: 120vw, 
+                     80vw,
+                     20vw,
+                     100vw;
+  }
+}
+
+
+/* Landscape view for extra small screens: 640px */
+@media screen and (max-width: 640px) and (orientation: landscape)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: top center, 
+                         -90vw 180vh,
+                         75vw 325vh,
+                         0vw 575vh;
+    background-size: 130vw, 
                      80vw,
                      20vw,
                      100vw;
