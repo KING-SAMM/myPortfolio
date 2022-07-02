@@ -16,7 +16,7 @@ const MobileNav = () => {
 
                 { toggle && (
                     <motion.div
-                        whileInView={ {x: [100, 0], opacity: [0, 1] }}
+                        whileInView={ {x: [250, 0], opacity: [0, 1] }}
                         transition={{ duration: 0.35, ease: 'easeOut' }}
                     >
                         <HiX onClick={ () => setToggle(false) } />
