@@ -17,13 +17,13 @@ const MobileNav = () => {
                 { toggle && (
                     <motion.div
                         whileInView={ {x: [100, 0], opacity: [0, 1] }}
-                        transition={{ duration: 0.85, ease: 'easeOut' }}
+                        transition={{ duration: 0.35, ease: 'easeOut' }}
                     >
                         <HiX onClick={ () => setToggle(false) } />
                         <ul>
                             {/* Loop through other menu items  */}
                             {[ "home", "about", "skills", "contact" ].map(( item ) => (
-                                <l1 key={ `${ item }` }>
+                                <l1 key={ `${ item }` } className={`my-1`}>
                                     <Link
                                         activeClass={`active`}
                                         to={ `${ item }` }
