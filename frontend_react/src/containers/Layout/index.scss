@@ -190,11 +190,36 @@
     {
         margin-top: 240vh;
     }
+     
+
+    // Portrait view forsmall screens: 375px by height 667px and above 
+    @media screen and (max-width: 376px) and (min-height: 812px)
+    {
+        margin-top: 201vh
+    }
 
     // Extra small screens: portrait 360px and below
     @media (max-width: 360px)
     {
         margin-top: 280vh;
+    }
+
+    // Portrait view for extra small screens: 360px by height 640px and above 
+    @media screen and (max-width: 360px) and (min-height: 640px)
+    {
+        margin-top: 260vh;
+    }
+
+    // Portrait view for extra small screens: 360px by height 676px and above 
+    @media screen and (max-width: 360px) and (min-height: 676px)
+    {
+        margin-top: 250vh;
+    }
+
+    // Portrait view for extra small screens: 360px by height 740px and above 
+    @media screen and (max-width: 360px) and (min-height: 740px)
+    {
+        margin-top: 230vh;
     }
 
     // Extra small screens: portrait 280px and below
@@ -219,6 +244,12 @@
     @media screen and (max-width: 720px) and (orientation: landscape)
     {
         margin-top: 320vh;
+    }
+
+    /* Extra small screens landscape: 676px  */
+    @media screen and (max-width: 676px) and (orientation: landscape)
+    {
+        margin-top: 440vh;
     }
 
     // Extra small screens landscape: 667px
@@ -291,10 +322,34 @@
         margin-top: 340vh;
     }
 
+    // Portrait view forsmall screens: 375px by height 667px and above 
+    @media screen and (max-width: 376px) and (min-height: 812px)
+    {
+        margin-top: 301vh
+    }
+
     // Extra small screens: portrait 360px and below
     @media (max-width: 360px)
     {
         margin-top: 390vh;
+    }
+
+    // Portrait view for extra small screens: 360px by height 640px and above 
+    @media screen and (max-width: 360px) and (min-height: 640px)
+    {
+        margin-top: 360vh;
+    }
+
+    // Portrait view for extra small screens: 360px by height 676px and above 
+    @media screen and (max-width: 360px) and (min-height: 676px)
+    {
+        margin-top: 360vh;
+    }
+
+    // Portrait view for extra small screens: 360px by height 740px and above 
+    @media screen and (max-width: 360px) and (min-height: 740px)
+    {
+        margin-top: 340vh;
     }
 
     // Extra small screens: portrait 280px and below
@@ -315,6 +370,12 @@
         margin-top: 645vh;
     }
 
+    /* Landscape view for small screens: 812px  */
+    @media screen and (max-width: 812px) and (orientation: landscape)
+    {
+        margin-top: 665vh;
+    }
+
     // Small screens landscape: 786px
     @media screen and (max-width: 787px) and (orientation: landscape)
     {
@@ -331,6 +392,12 @@
     @media screen and (max-width: 720px) and (orientation: landscape)
     {
         margin-top: 440vh;
+    }
+
+    // Extra small screens landscape: 676px  
+    @media screen and (max-width: 676px) and (orientation: landscape)
+    {
+        margin-top: 600vh;
     }
 
     // Extra small screens landscape: 667px
@@ -383,6 +450,24 @@
     @media (max-width: 360px)
     {
         margin-top: 540vh;
+    }
+
+    // Portrait view for extra small screens: 360px by height 640px and above 
+    @media screen and (max-width: 360px) and (min-height: 640px)
+    {
+        margin-top: 460vh;
+    }
+
+    // Portrait view for extra small screens: 360px by height 676px and above 
+    @media screen and (max-width: 360px) and (min-height: 676px)
+    {
+        margin-top: 510vh;
+    }
+
+    // Portrait view for extra small screens: 360px by height 740px and above 
+    @media screen and (max-width: 360px) and (min-height: 740px)
+    {
+        margin-top: 490vh;
     }
 
     // Extra small screens: portrait 280px and below

@@ -245,6 +245,23 @@ body {
   }
 }
 
+
+/* Landscape view for small screens: 812px  */
+@media screen and (max-width: 812px) and (orientation: landscape)
+{
+  body
+  {
+    background-image: url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: top center, 
+                         -70vw 80vh,
+                         75vw 365vh,
+                         0vw 660vh;
+  }
+}
+
 /* Landscape view for small screens: 786px  */
 @media screen and (max-width: 787px) and (orientation: landscape)
 {
@@ -282,6 +299,55 @@ body {
                       80vw,
                       20vw,
                       150vw;
+       
+  }
+}
+
+
+/* Portrait view for extra small screens: 393px  */
+@media screen and (max-width: 394px) and (min-height: 850px)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 180vh,
+                         90vw 200vh,
+                         -20vw 304vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+
+/* Portrait view for extra small screens: 390px  */
+@media screen and (max-width: 391px) and (orientation: portrait)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                    top center, 
+                    -100vw 180vh,
+                    90vw 200vh,
+                    -20vw 304vh;
+    background-size: 
+                    cover, 
+                    80vw,
+                    20vw,
+                    150vw;
        
   }
 }
@@ -335,6 +401,100 @@ body {
 }
 
 
+/* Portrait view for extra small screens: 375px by min-height 812px */
+@media screen and (max-width: 376px) and (min-height: 812px)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 180vh,
+                         90vw 205vh,
+                         -20vw 303vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+/* Portrait view for extra small screens: 360px by height 640px and above */
+@media screen and (max-width: 360px) and (min-height: 640px)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 160vh,
+                         90vw 235vh,
+                         -20vw 364vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+
+/* Portrait view for extra small screens: 360px by height 676px and above */
+@media screen and (max-width: 360px) and (min-height: 676px)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 160vh,
+                         90vw 225vh,
+                         -20vw 364vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+/* Portrait view for extra small screens: 360px by height 740px and above */
+@media screen and (max-width: 360px) and (min-height: 740px)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                         top center, 
+                         -100vw 160vh,
+                         90vw 215vh,
+                         -20vw 344vh;
+    background-size: cover, 
+                      80vw,
+                      20vw,
+                      150vw;
+       
+  }
+}
+
+
 /* Portrait view for extra small screens: 280px  */
 @media screen and (max-width: 280px) and (orientation: portrait)
 {
@@ -349,7 +509,7 @@ body {
                          top center, 
                          -100vw 180vh,
                          90vw 225vh,
-                         -20vw 355vh;
+                         -20vw 357vh;
     background-size: cover, 
                       80vw,
                       20vw,
@@ -364,18 +524,21 @@ body {
 {
   body
   {
-    background-image: url('../src/assets/bg-blockchain02.jpg'), 
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
                     url('../src/assets/logo02.png'),
                     url('../src/assets/logo02.png'),
                     url('../src/assets/hand_touching_global_network04.jpg');
-    background-position: top center, 
-                         -90vw 180vh,
-                         75vw 380vh,
-                         0vw 623vh;
-    background-size: cover, 
-                         80vw,
-                         20vw,
-                         100vw;
+    background-position: 
+                    top center, 
+                    -90vw 180vh,
+                    75vw 380vh,
+                    0vw 623vh;
+    background-size: 
+                    cover, 
+                    80vw,
+                    20vw,
+                    100vw;
   }
 }
 
@@ -385,14 +548,34 @@ body {
 {
   body
   {
-    background-image: url('../src/assets/bg-blockchain02.jpg'), 
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
                     url('../src/assets/logo02.png'),
                     url('../src/assets/logo02.png'),
                     url('../src/assets/hand_touching_global_network04.jpg');
-    background-position: top center, 
-                         -70vw 80vh,
-                         75vw 265vh,
-                         0vw 442vh;
+    background-position: 
+                    top center, 
+                    -70vw 80vh,
+                    75vw 265vh,
+                    0vw 442vh;
+  }
+}
+
+/* Landscape view for extra small screens: 676px  */
+@media screen and (max-width: 676px) and (orientation: landscape)
+{
+  body
+  {
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/logo02.png'),
+                    url('../src/assets/hand_touching_global_network04.jpg');
+    background-position: 
+                    top center, 
+                    -70vw 80vh,
+                    75vw 345vh,
+                    0vw 602vh;
   }
 }
 
@@ -402,18 +585,21 @@ body {
 {
   body
   {
-    background-image: url('../src/assets/bg-blockchain02.jpg'), 
+    background-image: 
+                    url('../src/assets/bg-blockchain02.jpg'), 
                     url('../src/assets/logo02.png'),
                     url('../src/assets/logo02.png'),
                     url('../src/assets/hand_touching_global_network04.jpg');
-    background-position: top center, 
-                         -90vw 180vh,
-                         75vw 320vh,
-                         0vw 550vh;
-    background-size: cover, 
-                         80vw,
-                         20vw,
-                         100vw;
+    background-position: 
+                    top center, 
+                    -90vw 180vh,
+                    75vw 320vh,
+                    0vw 550vh;
+    background-size: 
+                    cover, 
+                    80vw,
+                    20vw,
+                    100vw;
   }
 }
 
