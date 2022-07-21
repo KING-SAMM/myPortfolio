@@ -22,7 +22,7 @@ const MobileNav = () => {
                         <HiX onClick={ () => setToggle(false) } />
                         <ul>
                             {/* Loop through other menu items  */}
-                            {[ "home", "about", "skills", "contact" ].map(( item ) => (
+                            {[ "home", "about", "skills", "projects", "contact" ].map(( item ) => (
                                 <l1 key={ `${ item }` } className={`my-1`}>
                                     <Link
                                         activeClass={`active`}
