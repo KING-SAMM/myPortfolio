@@ -142,6 +142,17 @@ nav
                 }
             }
 
+            // Projects <NavLink />
+            .projects-link 
+            {
+                // Pseudo element of projects link icon 
+                &::after
+                {
+                    content: 'PROJECTS';
+                    right: 3px;
+                }
+            }
+
             // Contact <NavLink />
             .contact-link 
             {
