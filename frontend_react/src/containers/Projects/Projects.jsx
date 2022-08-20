@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import './Projects.scss';
-import project1 from '../../assets/localhost_3000_(Nest-Hub).png';
+import { my_portfolio, cryptex, studioeternal } from '../../assets/index';
 import { FlatButton } from '../../components';
 
 const Projects = () => {
@@ -19,7 +19,7 @@ const Projects = () => {
 
 
   return (
-    <div id='projects' className="container projects-page flex flex-col lg:items-center">
+    <div id='projects' className="container projects-page flex flex-col lg:items-center lg:min-w-full">
 
       {/* Projects Title  */}
       <div className="main-text flex flex-col lg:ml-[5%] mt-[100px] w-[90%]">
@@ -35,35 +35,59 @@ const Projects = () => {
       <div className='flex flex-col lg:flex-row lg:justify-center lg:justify-evenly w-full h-80 lg:px-[5%]'>
 
         {/* Dapp Project  */}
-        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto'>
-          <p className='mb-2 mt-0 text-blue-200 text-[20px] font-bold '>Decentralised Application</p>
-          <img src={ project1 } alt="Dapp image" width="350" />
+        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4 lg:max-w-64'>
+          <p className='mb-2 mt-0 text-blue-200 text-[18px] font-bold '>Decentralised Application</p>
+          <img src={ cryptex } alt="Dapp image" className="w-full lg:w-full" />
           <div className='flex flex-row bg-[#06153F] w-full h-full cursor-pointer'>
             <a 
               href='https://cryptex1.netlify.app'
+              target="_blank"
               className='flex justify-center items-center text-blue-300 text-xl w-1/2 border border-indigo-900 border-r-indigo-800'>
               Visit
             </a>
             <a 
               href='https://github.com/KING-SAMM/CryptEx'
+              target="_blank"
               className='flex justify-center items-center text-blue-300 text-xl w-1/2 border border-indigo-900 border-l-indigo-800'>
               Source
             </a>
           </div>
         </div>
 
-        {/* Prtfolio Website Project  */}
-        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto'>
-          <p className='mb-2 mt-0 text-blue-200 text-[20px] font-bold '>Portfolio Website</p>
-          <img src={ project1 } alt="Portfolio website image" width="350" />
+        {/* Full Page Website  */}
+        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4 lg:max-w-64'>
+          <p className='mb-2 mt-0 text-blue-200 text-[18px] font-bold '>Studioeternal</p>
+          <img src={ studioeternal } alt="Dapp image" className="w-full lg:w-full" />
           <div className='flex flex-row bg-[#06153F] w-full h-full cursor-pointer'>
             <a 
+              href='https://studioeternal.net'
+              target="_blank"
+              className='flex justify-center items-center text-blue-300 text-xl w-1/2 border border-indigo-900 border-r-indigo-800'>
+              Visit
+            </a>
+            <a 
               href='#'
+              target="_blank"
+              className='flex justify-center items-center text-blue-300 text-xl w-1/2 border border-indigo-900 border-l-indigo-800'>
+              Source
+            </a>
+          </div>
+        </div>
+
+        {/* Portfolio Website Project  */}
+        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4 lg:max-w-64'>
+          <p className='mb-2 mt-0 text-blue-200 text-[18px] font-bold '>Portfolio Website</p>
+          <img src={ my_portfolio } alt="Portfolio website image" className="w-full lg:w-full" />
+          <div className='flex flex-row bg-[#06153F] w-full h-full cursor-pointer'>
+            <a 
+              href='https://kcsamm.netlify.app'
+              target="_blank"
               className='flex justify-center items-center text-blue-300 text-xl w-1/2 border border-indigo-900 border-r-indigo-800'>
               Visit
             </a>
             <a 
               href='https://github.com/KING-SAMM/myPortfolio'
+              target="_blank"
               className='flex justify-center items-center text-blue-300 text-xl w-1/2 border border-indigo-900 border-l-indigo-800'>
               Source
             </a>
