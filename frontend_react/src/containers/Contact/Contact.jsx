@@ -12,7 +12,7 @@ const Contact = () => {
   // Animate (rubberBand) the Home page letters on hover 
   useEffect(() => 
   {
-    // Do this after 4s 
+    // Do this after 3s 
     setTimeout(() => 
     {
       setLetterClass('text-animate-hover')

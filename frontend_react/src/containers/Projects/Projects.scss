@@ -6,12 +6,56 @@
         vertical-align: middle;
         display: table-cell;
         max-height: 90%;
-        
+        left: 5%;
+        width: 90%;
+
         h1 
         {
+            font-size: 38px;
             font-family: 'Coolvetica';
             color: rgb(96 165 250);
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 30px;
+            left: 10px;
         }
+    }
+}
+
+// About and Contact pages
+// Main text for medium screens
+@media (min-width: 768px)
+{
+    .about-page,
+    .contact-page
+    {
+        .main-text
+        {
+            left: 8%;
+            width: 65%;
+
+            h1 
+            {
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+// About and Contact pages
+// Main text for large screens
+@media (min-width: 992px)
+{
+    .about-page,
+    .contact-page
+    {
+        .main-text
+        {
+            left: 10%;
+            width: 40%;
+        }
+
     }
 }
 
