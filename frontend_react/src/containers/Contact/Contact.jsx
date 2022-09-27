@@ -45,8 +45,8 @@ const Contact = () => {
   }
 
   return (
-    <div id='contact' className='container contact-page'>
-      <div className="main-text">
+    <div id='contact' className='container contact-page mb-[400px]'>
+      <div className="main-text mt-[150px] ml-[5%] lg:mt-[50px] lg:ml-[10%]">
         <h1>
           <AnimatedLetters 
             letterClass={ letterClass }

@@ -11,10 +11,7 @@
 }
 
 .image
-{
-    // z-index: 10px;
-    // margin-top: 620px;
-    
+{    
     width: 55vw;
     height: 55vw;
     
@@ -33,23 +30,28 @@
     animation: fadeIn 1s 2.0s backwards;
 
     // Portrait
-    @media screen and (max-width: 912px) and (orientation: portrait)
+    @media screen and (min-width: 768px) and (orientation: portrait)
     {
-        position: absolute;
-        top: 640px;
+        margin-bottom: 60px;
+    }
+
+    // Portrait
+    @media screen and (min-width: 820px) and (orientation: portrait)
+    {
+        margin-bottom: 140px;
     }
 
     // Portrait: extra small screens
     @media screen and (max-width: 280px) and (orientation: portrait)
     {
-        top: 685px;
+        // top: 685px;
     }
 
     // Landscape
     @media screen and (max-width: 991px) and (orientation: landscape)
     {
-        position: absolute;
-        bottom: -560px;
+        // position: absolute;
+        // bottom: -560px;
     }
 
     // Landscape: extra small screens: 720
@@ -65,7 +67,7 @@
     }
 }
 
-// LArge screens
+// Large screens
 @media (min-width: 992px)
 {
     .about-page

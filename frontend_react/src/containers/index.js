@@ -7,3 +7,5 @@ export { default as Contact } from './Contact/Contact';
 export { default as Footer } from './Footer/Footer';
 export { default as Layout } from './Layout/Layout';
 export { default as ScrollLayout } from './ScrollLayout/ScrollLayout';
+export { default as Test } from './Test/Test';
+export { default as Trial } from './Trial/Trial';

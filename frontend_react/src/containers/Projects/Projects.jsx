@@ -19,10 +19,10 @@ const Projects = () => {
 
 
   return (
-    <div id='projects' className="container projects-page flex flex-col lg:items-center lg:min-w-full">
+    <div id='projects' className="container projects-page flex flex-col lg:items-center lg:min-w-full mb-[600px] ">
 
       {/* Projects Title  */}
-      <div className="main-text flex flex-col lg:ml-[5%] mt-[100px] w-[90%]">
+      <div className="main-text mt-[150px] ml-[5%] lg:mt-[100px] lg:ml-[10%] flex flex-col w-[90%]">
         <h1 className="text-[42px] font-normal mb-[30px] mt-0 lg:ml-[35px] ml-[30px]">
           <AnimatedLetters 
             letterClass={ letterClass }
@@ -32,7 +32,7 @@ const Projects = () => {
       </div>
 
       {/* Begin Projects Row  */}
-      <div className='flex flex-col lg:flex-row lg:justify-center lg:justify-evenly w-full h-80 lg:px-[5%]'>
+      <div className='flex flex-col lg:flex-row lg:justify-center w-full h-80 lg:px-[5%]'>
 
         {/* Dapp Project  */}
         <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4 lg:max-w-64'>

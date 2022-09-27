@@ -27,8 +27,7 @@ import kc_samm5 from '../assets/kc_samm5.png';
 
 
 
-export default 
-{
+export default {
     logo,
     logo01,
     logo02,

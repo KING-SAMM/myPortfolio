@@ -3,7 +3,7 @@ import './footer.scss';
 
 const Footer = () => {
   return (
-    <div className='container footer-section'>
+    <div id="footer" className='container footer-section'>
       <div className='flex justify-center'>
         <Social socialClass="social__mobile" />
         <Copyright copyClass="copy__mobile" />

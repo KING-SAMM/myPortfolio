@@ -17,8 +17,8 @@ const About = () => {
   }, [])
 
   return (
-    <div id='about' className='container about-page md:w-full'>
-      <div className='main-text'>
+    <div id='about' className='container about-page md:mb-[240px] md:w-full'>
+      <div className='main-text mt-[150px] ml-[5px] md:ml-[-180px] lg:mt-[0px] lg:ml-[10%]'>
         <h1>
           <AnimatedLetters
             letterClass={ letterClass }
@@ -58,7 +58,7 @@ const About = () => {
         </div>
            
       </div>
-      <div className="image">
+      <div className="image -mb-16 md:mt-[40px]">
       </div>
     </div>
   )
