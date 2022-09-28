@@ -20,7 +20,7 @@ const Skills = () => {
   }, [])
 
   return (
-    <div id='skills' className='container skills-page'>
+    <div id='skills' className='container skills-page xs360:pb-48'>
       <div className='central-wrapper xs360:pt-24'>
         <div className='main-text'>
           <h1>

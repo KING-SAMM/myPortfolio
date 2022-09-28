@@ -53,6 +53,32 @@
       position: relative;
       min-height: 100vh;
     }
+
+    #projects 
+    {
+      position: relative;
+      min-height: calc((320px * 3) + 72px + 156px);
+      padding-top: 120px;
+      padding-bottom: 0;
+
+    }
+
+    #contact
+    {
+      position: relative;
+      min-height: 100vh;
+
+      background-image: url('../../assets/hand_touching_global_network02.jpg');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100vw;
+    }
+
+    #footer
+    {
+      position: relative;
+      min-height: 100vh;
+    }
 }
 
 // Scroll Layout on medium devices

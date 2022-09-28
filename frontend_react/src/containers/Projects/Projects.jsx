@@ -19,10 +19,10 @@ const Projects = () => {
 
 
   return (
-    <div id='projects' className="container projects-page flex flex-col lg:items-center lg:min-w-full mb-[600px] ">
+    <div id='projects' className="container projects-page flex flex-col lg:items-center lg:min-w-full">
 
       {/* Projects Title  */}
-      <div className="main-text mt-[150px] ml-[5%] lg:mt-[100px] lg:ml-[10%] flex flex-col w-[90%]">
+      <div className="main-text ml-[5%] lg:mt-[100px] lg:ml-[10%] flex flex-col w-[90%]">
         <h1 className="text-[42px] font-normal mb-[30px] mt-0 lg:ml-[35px] ml-[30px]">
           <AnimatedLetters 
             letterClass={ letterClass }
@@ -94,7 +94,6 @@ const Projects = () => {
           </div>
         </div>
       </div> {/* End Projects Row */}
-    
 
     </div>
   )
