@@ -105,6 +105,52 @@
     {
       min-height: 100vh;
     }
+
+    #projects 
+    {
+      position: relative;
+      min-height: calc((320px * 3) + 72px + 156px);
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
+
+    #contact
+    {
+      position: relative;
+      min-height: 100vh;
+
+      background-image: url('../../assets/hand_touching_global_network02.jpg');
+      background-repeat: no-repeat;
+      background-position: 0vw -7vh;
+      background-size: 100vw;
+
+      .main-text 
+      {
+        margin-top: -220px;
+      }
+    }
+}
+
+@media (min-width: 820px)
+{
+    #contact
+    {
+      .main-text 
+      {
+        margin-top: -380px;
+      }
+    }
+}
+
+@media (min-width: 912px)
+{
+    #contact
+    {
+      .main-text 
+      {
+        margin-top: -550px;
+      }
+    }
 }
 
 // Layout on large devices (No scrolling)
