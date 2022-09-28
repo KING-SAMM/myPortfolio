@@ -7,11 +7,6 @@
   {
     display: none;
   }
-
-  // .fixed
-  // {
-  //   display: block;
-  // }
 }
 
 // Enable scrolling on medium and small screens
@@ -21,10 +16,110 @@
   {
     display: block;
   }
-
-  // .fixed
-  // {
-  //   display: none;
-  // }
 }
+
+// Scroll Layout on small devices
+@media (max-width: 767px)
+{
+  // Background image on home page
+    #home
+    {
+        min-height: 100vh;
+        padding-top: 150px;
+        background-image: url('../../assets/bg-blockchain02.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #about
+    {
+        position: relative;
+        min-height: 100vh;
+        padding-top: 120px;
+        background-image: url('../../assets/logo02.png'),
+        url('../../assets/logo01.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: -70vw -8vh, 85vw 48vh;
+        background-size: 80vw;
+
+        .image
+        {
+          background-image: url('../../assets/kc_samm2.png');  
+        }
+    }
+
+    #skills
+    {
+      position: relative;
+      min-height: 100vh;
+    }
+}
+
+// Scroll Layout on medium devices
+@media (min-width: 768px)
+{
+  // Background on home page
+    #home
+    {
+        min-height: 100vh;
+        padding-top: 150px;
+        background-image: url('../../assets/bg-blockchain.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #about
+    {
+      min-height: 100vh;
+      padding-top: 150px;
+    }
+
+    #skills
+    {
+      min-height: 100vh;
+    }
+}
+
+// Layout on large devices (No scrolling)
+@media (min-width: 992px)
+{
+  // Background image on home page
+    #home
+    {
+        min-height: 100vh;
+        padding-top: 80px;
+        background-image: url('../../assets/bg-blockchain02.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #skills
+    {
+      .central-wrapper
+      {
+        .main-text
+        {
+          margin-top: 70px;
+        }
+      }
+    }
+}
+
+// Extra Laerge 
+@media (min-width: 1280px)
+{
+  #skills
+  {
+    .central-wrapper
+    {
+      .main-text
+      {
+        margin-top: 180px;
+      }
+    }
+  }
+}
+
 

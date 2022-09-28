@@ -7,11 +7,11 @@ import './ScrollLayout.scss';
 const ScrollLayout = ({ scrollClass }) => {
   return (
     // <div className={ scrollClass } >
-    <div className='scroll absolute'>
+    <div className='scroll'>
       <Home id="home" />
       {/* <Trial className='' />
       <Test className='' /> */}
-      <About id="about" className="" />
+      <About id="about" />
       <Skills id="skills" />
       <Projects id="projects" />
       <Contact id="contact" />

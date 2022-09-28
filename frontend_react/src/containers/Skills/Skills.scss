@@ -1,8 +1,7 @@
 .skills-page 
 {
     display: flex;
-    // justify-content: center;
-    align-items: center;
+    // justify-content: center;;
 
     .central-wrapper
     {
@@ -10,8 +9,6 @@
         flex-direction: column;
         width: 100%;
         margin: 0px auto;
-        // margin-bottom: 119px;
-        // margin-top: -490px;
 
         // Main text
         .main-text
@@ -40,25 +37,11 @@
                 font-family: 'Coolvetica';
                 color: rgb(96 165 250);
                 font-weight: 400;
-                margin-top: 137px;
+                // margin-top: 137px;
                 
                 position: relative;
                 margin-bottom: 30px;
                 left: 10px;
-
-                @media (min-width: 375px)
-                {
-                    margin-top: 292px
-                }
-                @media (min-width: 390px)
-                {
-                    margin-top: 177px
-                }
-                @media (min-width: 414px)
-                {
-                    margin-top: 187px
-                }
-                
             }
 
             .skills-list
@@ -114,12 +97,6 @@
             display: block;
             margin: 0% auto;
             margin-top: 150px;
-            // left: 5%;
-            // top: 100px;
-            // transform: translateY(-50%);
-            // width: 90%;
-            // vertical-align: middle;
-            // display: table-cell;
             max-height: 90%;
 
             @media (min-width: 375px)
@@ -218,8 +195,7 @@
     .skills-page
     {
         .central-wrapper
-        {
-            margin-top: -280px;
+        {;
             .main-text
             {
                 margin-left: 5%;
@@ -254,7 +230,7 @@
     {
         .central-wrapper
         {
-            margin-top: -450px;
+            margin-top: 0px;
         }
     }
 }
@@ -262,10 +238,7 @@
 { 
     .skills-page
     {
-        .central-wrapper
-        {
-            margin-top: -400px;
-        }
+        
     }
 }
 
@@ -364,8 +337,40 @@
     }
 }
 
+// Cune container for larger screens: 1024px
+@media (min-width: 1024px)
+{
+    .skills-page
+    {
+        .central-wrapper
+        {
+            .cube-container
+            {
+                margin-top: 80px;
+            }
+        }
+        
+    }
+}
+
+// Cune container for extra large screens: 1280px
+@media (min-width: 1280px)
+{
+    .skills-page
+    {
+        .central-wrapper
+        {
+            .cube-container
+            {
+                margin-top: 160px;
+            }
+        }
+        
+    }
+}
+
 // Main text for extra large screens
-@media (min-width: 1200px)
+@media (min-width: 1280px)
 {
     .skills-page
     {
