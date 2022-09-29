@@ -1,7 +1,6 @@
 .skills-page 
 {
     display: flex;
-    // justify-content: center;;
 
     .central-wrapper
     {
@@ -92,7 +91,6 @@
         // Cube Container
         .cube-container
         {
-            // margin-top: 100px;
             margin-left: 5%;
             display: block;
             margin: 0% auto;
@@ -195,7 +193,7 @@
     .skills-page
     {
         .central-wrapper
-        {;
+        {
             .main-text
             {
                 margin-left: 5%;
@@ -224,6 +222,7 @@
         
     }
 }
+
 @media (min-width: 820px)
 { 
     .skills-page
@@ -234,13 +233,7 @@
         }
     }
 }
-@media (min-width: 912px)
-{ 
-    .skills-page
-    {
-        
-    }
-}
+
 
 // Main text for large screens
 @media (min-width: 992px)
@@ -337,13 +330,17 @@
     }
 }
 
-// Cune container for larger screens: 1024px
+// Cube container and main text for larger screens: 1024px
 @media (min-width: 1024px)
 {
     .skills-page
     {
         .central-wrapper
         {
+            .main-text 
+            {
+                padding-top: 100px;
+            }
             .cube-container
             {
                 margin-top: 80px;
@@ -360,6 +357,11 @@
     {
         .central-wrapper
         {
+            .main-text 
+            {
+                padding-top: 200px;
+            }
+
             .cube-container
             {
                 margin-top: 160px;
@@ -383,7 +385,6 @@
 }
 
 
-
 // Cube Container for medium screens
 @media (min-width: 768px)
 {
@@ -391,16 +392,11 @@
     {
         .central-wrapper
         {
-
-            // flex-direction: row;
-    
             .cube-container
             {
                 padding-top: 15%;
-                
                 display: flex;
-                // justify-content: center;
-
+            
                 svg 
                 {
                     font-size: x-large;
@@ -428,23 +424,15 @@
 {
     .cube-container
     {
-        // display: block;
-        // margin: 0 auto;
-        // padding-top: 18%;;
-        // margin-left: 0;
-        // padding-left: 0;
         width: 50%;
-        // overflow: hidden;
         position: relative;
         left: -15%;
         justify-content: center;
-
 
         svg 
         {
             font-size: xx-large;
         }
-
     }
 }
 

@@ -16,10 +16,8 @@
             margin: 0;
             list-style: none;
             margin-bottom: 10px;
-            // overflow: hidden;
             display: block;
             position: relative;
-            // opacity: 0;
             animation: fadeInUp 2s 2s;
             animation-fill-mode: backwards;
         }
@@ -68,9 +66,7 @@
     }
 
     .submit-button
-    // .flat-button-mobile
     {
-        // display: inline-block;
         font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
@@ -151,7 +147,3 @@
         }
     }
 }
-
-
-
-

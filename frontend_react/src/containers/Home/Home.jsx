@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <div id='home' className="container home-page">
-      <div className="main-text ml-[5%] lg:mt-[100px] lg:ml-[10%]">
+      <div className="main-text ml-[5%] lg992:pt-[100px] lg:pt-[140px] xl:pt-[200px] lg:ml-[10%]">
         <h1 className="text-blue-100 text-[50px] m-0">
 
           {/* Animate (fadeIn) the following letters  */}

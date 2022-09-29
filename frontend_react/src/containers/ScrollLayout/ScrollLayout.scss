@@ -18,8 +18,109 @@
   }
 }
 
+
+
+// Scroll Layout on medium devices
+// 991px and below
+@media (max-width: 991px) //912
+{
+  #home
+  {
+      min-height: 100vh;
+      padding-top: 150px;
+      background-image: url('../../assets/bg-blockchain.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+  #about
+  {
+    min-height: 100vh;
+    padding-top: 11vh;
+  }
+
+   #skills
+   {
+    min-height: 100vh;
+    padding-top: 4vh;
+   }
+
+    #projects 
+    {
+      position: relative;
+      min-height: calc((320px * 3) + 72px + 156px);
+      padding-top: 12vh;
+      padding-bottom: 0;
+    }
+
+    #contact
+    {
+      position: relative;
+      min-height: 100vh;
+
+      background-image: url('../../assets/hand_touching_global_network02.jpg');
+      background-repeat: no-repeat;
+      background-position: 0vw -9vh;
+      background-size: 100vw;
+
+      .main-text 
+      {
+        margin-top: -43vh;
+      }
+    }
+}
+
+// Layout on medium: 911px and below
+@media (max-width: 911px) // 820
+{
+    #skills 
+    {
+      margin-top: 1vh;
+    }
+    #contact
+    {
+      .main-text 
+      {
+        margin-top: -37vh;
+      }
+    }
+}
+
+// Layout on medium: 819px and below
+@media (max-width: 819px) // 768
+{
+    #about
+    {
+      padding-top: 11vh;
+    }
+
+    #skills
+    {
+      min-height: 100vh;
+      padding-top: 2vh;
+    }
+
+    #projects
+    {
+      padding-top: -32vh;
+    }
+
+    #contact
+    {
+      background-position: 0vw -11vh;
+
+      .main-text 
+      {
+        margin-top: -32vh; //-280px;
+      }
+    }
+
+}
+
+
 // Scroll Layout on small devices
-@media (max-width: 767px)
+@media (max-width: 767px) // 412
 {
   // Background image on home page
     #home
@@ -58,7 +159,7 @@
     {
       position: relative;
       min-height: calc((320px * 3) + 72px + 156px);
-      padding-top: 120px;
+      // padding-top: 13vh;
       padding-bottom: 0;
 
     }
@@ -67,6 +168,7 @@
     {
       position: relative;
       min-height: 100vh;
+      padding-top: 18vh;
 
       background-image: url('../../assets/hand_touching_global_network02.jpg');
       background-repeat: no-repeat;
@@ -81,117 +183,112 @@
     }
 }
 
-// Scroll Layout on medium devices
-@media (min-width: 768px)
+
+@media (max-width: 411px) // 390
 {
-  // Background on home page
-    #home
-    {
-        min-height: 100vh;
-        padding-top: 150px;
-        background-image: url('../../assets/bg-blockchain.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    #about
-    {
-      min-height: 100vh;
-      padding-top: 150px;
-    }
-
-    #skills
-    {
-      min-height: 100vh;
-    }
-
-    #projects 
-    {
-      position: relative;
-      min-height: calc((320px * 3) + 72px + 156px);
-      padding-top: 100px;
-      padding-bottom: 0;
-    }
-
-    #contact
-    {
-      position: relative;
-      min-height: 100vh;
-
-      background-image: url('../../assets/hand_touching_global_network02.jpg');
-      background-repeat: no-repeat;
-      background-position: 0vw -7vh;
-      background-size: 100vw;
-
-      .main-text 
-      {
-        margin-top: -220px;
-      }
-    }
-}
-
-@media (min-width: 820px)
-{
-    #contact
-    {
-      .main-text 
-      {
-        margin-top: -380px;
-      }
-    }
-}
-
-@media (min-width: 912px)
-{
-    #contact
-    {
-      .main-text 
-      {
-        margin-top: -550px;
-      }
-    }
-}
-
-// Layout on large devices (No scrolling)
-@media (min-width: 992px)
-{
-  // Background image on home page
-    #home
-    {
-        min-height: 100vh;
-        padding-top: 80px;
-        background-image: url('../../assets/bg-blockchain02.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    #skills
-    {
-      .central-wrapper
-      {
-        .main-text
-        {
-          margin-top: 70px;
-        }
-      }
-    }
-}
-
-// Extra Laerge 
-@media (min-width: 1280px)
-{
-  #skills
+  #projects
   {
-    .central-wrapper
-    {
-      .main-text
-      {
-        margin-top: 180px;
-      }
-    }
+    padding-top: 13vh;
+  }
+
+  #contact 
+  {
+    padding-top: 23vh;
   }
 }
+
+@media (max-width: 389px)
+{
+  #contact
+  {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-width: 360px) and (min-height: 559px)
+{
+  #contact 
+  {
+    padding-top: 46vh;
+  }
+}
+@media (max-width: 360px) and (min-height: 640px)
+{
+  #about 
+  {
+    padding-top: 100px;
+  }
+  #contact 
+  {
+    padding-top: 44vh;
+  }
+}
+@media (max-width: 360px) and (min-height: 740px)
+{
+  #contact 
+  {
+    padding-top: 32vh;
+  }
+}
+
+
+// Layout on large devices (No scrolling)
+// @media (min-width: 992px)
+// {
+//   // Background image on home page
+//     #home
+//     {
+//         min-height: 100vh;
+//         padding-top: 80px;
+//         background-image: url('../../assets/bg-blockchain02.jpg');
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: cover;
+//     }
+
+//     #skills
+//     {
+//       max-height: 100vh;
+
+//       .central-wrapper
+//       {
+//         .main-text
+//         {
+//           padding-top: 70px;
+//         }
+//       }
+//     }
+
+//     #projects
+//     {
+//       min-height: 100vh;
+//       padding-top: 0px;
+
+//     }
+
+//     #contact
+//     {
+//       .main-text 
+//       {
+//         margin-top: 100px;
+//       }
+//     }
+// }
+
+// // Extra Large 
+// @media (min-width: 1280px)
+// {
+//   #skills
+//   {
+//     .central-wrapper
+//     {
+//       .main-text
+//       {
+//         margin-top: 120px;
+//       }
+//     }
+//   }
+  
+// }
 
 

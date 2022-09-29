@@ -1,14 +1,10 @@
 .home-page 
 {
     position: relative;
+
     // Main text area
     .main-text 
     {
-        // position: absolute; //MQ
-        // left: 5%;
-        // top: 100px;
-        
-        // transform: translate(-50%);
         width: 90%;
         max-height: 50%;
     }
@@ -89,7 +85,6 @@
 }
 
 
-
 // Flat button behaviours on different screen sizes
 @media screen and (max-width: 991px)
 {
@@ -118,8 +113,6 @@
 }
 
 
-
-
 // Homepage image styling
 .home-page
 {
@@ -128,7 +121,6 @@
 
 .home-page .image
 {
-    // z-index: 10px;
     margin-top: 450px;
     width: 55vw;
     height: 55vw;
@@ -178,13 +170,13 @@
 }
 
 // Hpmepage image on extra-large devices
-@media (min-width: 1200px)
+@media (min-width: 1280px)
 {
     .home-page
     {
         .image 
         {
-            top: -320px;
+            top: -280px;
             right: 6vw;
         }
     }

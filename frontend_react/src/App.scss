@@ -31,19 +31,16 @@ $blue-500: rgb(59 130 246);
 }
 
 
-
 /*--- flat Button  ---*/
 .flat-button,
 .flat-button-mobile
 {
-    // display: inline-block;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     border: 1px solid rgb(96 165 250);
     border-radius: 22px;
-    // float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
     color: rgb(96 165 250);
@@ -55,8 +52,6 @@ $blue-500: rgb(59 130 246);
         font-weight: 600;
     }
 }
-
-
 
 
 
@@ -111,7 +106,6 @@ $blue-500: rgb(59 130 246);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 
 /*--- Special classes ---*/

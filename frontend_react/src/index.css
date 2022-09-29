@@ -90,43 +90,7 @@ body {
     }
 }
 
-/* Large screens */
-/* @media screen and (min-width: 768px) 
-{
-    body
-    {
-        background-image: url('../src/assets/bg-blockchain02.jpg'),
-        url('../src/assets/logo02.png'), ;
-        background-position: center,
-        0vw 187vh;
-        background-repeat: no-repeat,
-        no-repeat;
-        background-size: cover,
-        20vw;
-    }
-} */
-
-/* background-image: url('../src/assets/bg-blockchain.jpg'), 
-url('../src/assets/logo02.png'), 
-url('../src/assets/hand_touching_global_network02.jpg'),
-url('../src/assets/hand_touching_global_network02.jpg');
-background-position: center, 
-   88vw 187vh,
-   center 203vh,
-   center 293vh;
-background-repeat: no-repeat, 
- no-repeat,
- no-repeat,
- no-repeat;
-background-size: cover, 
-20vw,
-100vw,
-100vw; */
-
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-

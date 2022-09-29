@@ -17,7 +17,6 @@
     height: 55vw;
     
     background: rgb(39, 51, 89, 0.4);
-    // border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -41,31 +40,6 @@
     {
         margin-bottom: 140px;
     }
-
-    // Portrait: extra small screens
-    // @media screen and (max-width: 280px) and (orientation: portrait)
-    // {
-    //     // top: 685px;
-    // }
-
-    // Landscape
-    // @media screen and (max-width: 991px) and (orientation: landscape)
-    // {
-    //     // position: absolute;
-    //     // bottom: -560px;
-    // }
-
-    // Landscape: extra small screens: 720
-    // @media screen and (max-width: 720px) and (orientation: landscape)
-    // {
-    //     top: 500px;
-    // }
-
-    // Landscape: extra small screens: 663
-    // @media screen and (max-width: 668px) and (orientation: landscape)
-    // {
-    //     top: 500px;
-    // }
 }
 
 // medium screens
@@ -101,14 +75,5 @@
             background-image: url('../../assets/kc_samm2.png');
             background-size: 30vw;
         }
-    }
-}
-
-
-@media screen and (max-width:740px) and (orientation: landscape)
-{
-    .about-page
-    {
-        
     }
 }
