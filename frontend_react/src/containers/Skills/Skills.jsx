@@ -1,8 +1,9 @@
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { RiReactjsLine, RiHtml5Fill, RiCss3Fill } from "react-icons/ri";
-import { FaSass, FaPhp, FaEthereum, FaNodeJs } from "react-icons/fa";
+import { FaSass, FaPhp, FaLaravel, FaEthereum, FaNodeJs } from "react-icons/fa";
 import { SiSolidity, SiJavascript, SiMongodb, SiTypescript, SiTailwindcss, SiGraphql } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/ti";
 import './Skills.scss';
 
 const Skills = () => {
