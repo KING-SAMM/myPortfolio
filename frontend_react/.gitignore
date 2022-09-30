@@ -12,6 +12,8 @@ variables.js
 dist
 dist-ssr
 *.local
+# .yarn
+# .netlify
 
 # Editor directories and files
 .vscode/*
