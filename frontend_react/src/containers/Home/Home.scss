@@ -25,16 +25,6 @@
         }
     }
 
-    // Main text area on large screens
-    @media (min-width: 992px) 
-    {
-        .main-text 
-        {
-            left: 10%;
-            width: 40%;
-        }
-    }
-
     h1
     {
         font-family: 'Coolvetica';
@@ -96,6 +86,7 @@
     .flat-button-mobile 
     {
         display: block;
+        max-width: max-content;
         margin-bottom: 200px;
     }
 }
@@ -150,34 +141,38 @@
     }
 }
 
-// Display homempage image on large devices
+
+// Display homempage main text and image on large devices
 @media (min-width: 992px)
 {
     .home-page
     {
-        flex-direction: row;
-        .image 
+        // flex-direction: row;
+        .main-text 
         {
-            position: absolute; 
-            top: -320px;
-            right: 10vw;
+            position: absolute;
+            top: auto;
+            left: 0;
+
+            margin-top: 23vh;
+            width: 40vw;
+
+        }
+
+        .image 
+        {    
+            position: absolute;
+            top: auto;
+            margin-top: 18vh;
+
+            right: 12vw;
             width: 34vw;
             height: 34vw;
             background-image: url('../../assets/kc_samm1.png');
+            background-repeat: no-repeat;
+            background-position: bottom;;
             background-size: 32vw;
         }
     }
-}
-
-// Hpmepage image on extra-large devices
-@media (min-width: 1280px)
-{
-    .home-page
-    {
-        .image 
-        {
-            top: -280px;
-            right: 6vw;
-        }
-    }
+    
 }

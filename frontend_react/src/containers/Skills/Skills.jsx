@@ -2,8 +2,7 @@ import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { RiReactjsLine, RiHtml5Fill, RiCss3Fill } from "react-icons/ri";
 import { FaSass, FaPhp, FaLaravel, FaEthereum, FaNodeJs } from "react-icons/fa";
-import { SiSolidity, SiJavascript, SiMongodb, SiTypescript, SiTailwindcss, SiGraphql } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/ti";
+import { SiSolidity, SiJavascript, SiMysql, SiTypescript, SiTailwindcss, SiGraphql } from "react-icons/si";
 import './Skills.scss';
 
 const Skills = () => {
@@ -23,7 +22,7 @@ const Skills = () => {
   return (
     <div id='skills' className='container skills-page xs360:pb-48 lg992:pb-0'>
       <div className='central-wrapper xs360:pt-24'>
-        <div className='main-text lg992:pt-[100px]'>
+        <div className='main-text lg992:pt-[18vh] lg:pt-[18vh]'>
           <h1>
             <AnimatedLetters
               letterClass={ letterClass }
@@ -53,9 +52,9 @@ const Skills = () => {
                 <FaNodeJs className="text-green-500" />
                 <span>Node</span>
               </div>
-              <div className="html5">
-                <RiHtml5Fill className="text-[#F06529]" />
-                <span>HTML 5</span>
+              <div className="graphql">
+                <SiGraphql className="text-red-500" />
+                <span>GraphQL</span>
               </div>
               <div className="css3">
                 <RiCss3Fill className="text-[#28A4D9]" />
@@ -69,13 +68,13 @@ const Skills = () => {
                 <SiTailwindcss className="text-blue-500" />
                 <span>Tailwind</span>
               </div>
-              <div className="graphql">
-                <SiGraphql className="text-red-500" />
-                <span>GraphQL</span>
+              <div className="mysql">
+                <SiMysql className="text-cyan-400" />
+                <span>MySQL</span>
               </div>
-              <div className="mongodb">
-                <SiMongodb className="text-green-700" />
-                <span>MongoDB</span>
+              <div className="laravel">
+                <FaLaravel className="text-red-700" />
+                <span>Laravel</span>
               </div>
               <div className="php">
                 <FaPhp className="text-blue-500" />

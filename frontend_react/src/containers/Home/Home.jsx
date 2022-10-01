@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <div id='home' className="container home-page">
-      <div className="main-text ml-[5%] lg992:pt-[100px] lg:pt-[140px] xl:pt-[200px] lg:ml-[10%]">
+      <div className="main-text ml-[5%] lg:ml-[10%]">
         <h1 className="text-blue-100 text-[50px] m-0">
 
           {/* Animate (fadeIn) the following letters  */}
@@ -62,7 +62,7 @@ const Home = () => {
         </h2>
         <Link to="/contact" className="flat-button text-[13px] py-2.5 px-5 mt-5 text-blue-400 ">Contact Me</Link>
 
-        <a href="#contact" className="flat-button-mobile text-[13px] py-2.5 pl-5 pr-1 mt-5 text-blue-400">Contact Me</a>
+        <a href="#contact" className="flat-button-mobile text-[13px] py-2.5 px-5 mt-5 text-blue-400">Contact Me</a>
       </div>
       <Social socialClass="social__desktop" />
       <Copyright copyClass="copy__desktop" />

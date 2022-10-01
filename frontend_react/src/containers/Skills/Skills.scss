@@ -12,16 +12,7 @@
         // Main text
         .main-text
         {    
-            // position: absolute;
-            // margin-top: 80px;
-            // margin: 0px auto;
-            // margin-bottom: 100px;
-            // left: 5%;
-            // top: 100px;
-            // transform: translateY(-50%);
             width: 90%;
-            // vertical-align: middle;
-            // display: table-cell;
             max-height: 90%;
 
             &:nth-last-of-type(2)
@@ -54,14 +45,14 @@
 
                 .solidity,
                 .react,
-                .html5,
+                .graphql,
                 .css3,
                 .javascript,
                 .sass,
                 .php,
                 .node,
-                .mongodb,
-                .graphql,
+                .mysql,
+                .laravel,
                 .typescript,
                 .tailwind
                 {
@@ -242,11 +233,15 @@
     {
         .central-wrapper
         {
-            margin-top: -80px;
+            position: absolute;
+            top: 0vh;
+
             flex-direction: row;
+            padding-top: 0px;
+
             .main-text
             {
-                margin-top: 100px;
+                // margin-top: 100px;
                 margin-left: 10%;
                 // left: 10%;
                 width: 50%;
@@ -336,14 +331,10 @@
     .skills-page
     {
         .central-wrapper
-        {
-            .main-text 
-            {
-                padding-top: 100px;
-            }
+        {    
             .cube-container
             {
-                margin-top: 80px;
+                margin-top: 14vh;
             }
         }
         
@@ -357,28 +348,10 @@
     {
         .central-wrapper
         {
-            .main-text 
-            {
-                padding-top: 200px;
-            }
-
             .cube-container
             {
-                margin-top: 160px;
+                margin-top: 16vh;
             }
-        }
-        
-    }
-}
-
-// Main text for extra large screens
-@media (min-width: 1280px)
-{
-    .skills-page
-    {
-        .central-wrapper
-        {
-            margin-top: -120px;
         }
         
     }

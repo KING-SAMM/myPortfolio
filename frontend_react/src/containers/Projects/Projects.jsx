@@ -22,7 +22,7 @@ const Projects = () => {
     <div id='projects' className="container projects-page flex flex-col lg:items-center lg:min-w-full">
 
       {/* Projects Title  */}
-      <div className="main-text ml-[5%] lg:mt-[100px] lg:ml-[10%] flex flex-col w-[90%]">
+      <div className="main-text ml-[5%] lg:mt-[100px] flex flex-col w-[90%]">
         <h1 className="text-[42px] font-normal mb-[30px] mt-0 lg:ml-[35px] ml-[30px]">
           <AnimatedLetters 
             letterClass={ letterClass }
@@ -35,7 +35,7 @@ const Projects = () => {
       <div className='flex flex-col lg:flex-row lg:justify-center w-full h-80 lg:px-[5%]'>
 
         {/* Dapp Project  */}
-        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4 lg:max-w-64'>
+        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4'>
           <p className='mb-2 mt-0 text-blue-200 text-[18px] font-bold '>Decentralised Application</p>
           <img src={ cryptex } alt="Dapp image" className="w-full lg:w-full" />
           <div className='flex flex-row bg-[#06153F] w-full h-full cursor-pointer'>
@@ -55,7 +55,7 @@ const Projects = () => {
         </div>
 
         {/* Full Page Website  */}
-        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4 lg:max-w-64'>
+        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4'>
           <p className='mb-2 mt-0 text-blue-200 text-[18px] font-bold '>Studioeternal</p>
           <img src={ studioeternal } alt="Dapp image" className="w-full lg:w-full" />
           <div className='flex flex-row bg-[#06153F] w-full h-full cursor-pointer'>
@@ -75,7 +75,7 @@ const Projects = () => {
         </div>
 
         {/* Portfolio Website Project  */}
-        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4 lg:max-w-64'>
+        <div className='flex flex-col justify-center items-center w-80 h-full mx-auto mb-6 md:mb-4'>
           <p className='mb-2 mt-0 text-blue-200 text-[18px] font-bold '>Portfolio Website</p>
           <img src={ my_portfolio } alt="Portfolio website image" className="w-full lg:w-full" />
           <div className='flex flex-row bg-[#06153F] w-full h-full cursor-pointer'>
