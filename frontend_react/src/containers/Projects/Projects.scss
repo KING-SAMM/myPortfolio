@@ -21,35 +21,35 @@
 
 // About and Contact pages
 // Main text for medium screens
-@media (min-width: 768px)
-{
-    .about-page,
-    .contact-page
-    {
-        .main-text
-        {
-            width: 65%;
+// @media (min-width: 768px)
+// {
+//     .about-page,
+//     .contact-page
+//     {
+//         .main-text
+//         {
+//             width: 65%;
 
-            h1 
-            {
-                font-size: 48px;
-            }
-        }
-    }
-}
+//             h1 
+//             {
+//                 font-size: 48px;
+//             }
+//         }
+//     }
+// }
 
 // About and Contact pages
 // Main text for large screens
-@media (min-width: 992px)
-{
-    .about-page,
-    .contact-page
-    {
-        .main-text
-        {
-            left: 10%;
-            width: 40%;
-        }
+// @media (min-width: 992px)
+// {
+//     .about-page,
+//     .contact-page
+//     {
+//         .main-text
+//         {
+//             left: 10%;
+//             width: 40%;
+//         }
 
-    }
-}
+//     }
+// }

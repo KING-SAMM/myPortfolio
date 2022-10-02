@@ -46,29 +46,54 @@
     padding-top: 4vh;
    }
 
-    #projects 
+  #projects 
+  {
+    position: relative;
+    min-height: calc((320px * 3) + 72px + 156px);
+    padding-top: 11vh;
+    padding-bottom: 0;
+  }
+
+  #contact
+  {
+    position: relative;
+    min-height: calc(10vh + 20px + 40vh + 50vh);
+
+    background-image: url('../../assets/hand_touching_global_network02.jpg');
+    background-repeat: no-repeat;
+    background-position: 0vw -9vh;
+    background-size: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    // background-color: red;
+
+    .main-text 
     {
-      position: relative;
-      min-height: calc((320px * 3) + 72px + 156px);
-      padding-top: 12vh;
-      padding-bottom: 0;
+      margin-top: 10vh;
+      margin-left: -19vw;
     }
 
-    #contact
+    .map-wrap
     {
       position: relative;
-      min-height: 100vh;
+      height: 40vh;
+      width: 100vw;
+      overflow-y: hidden;
 
-      background-image: url('../../assets/hand_touching_global_network02.jpg');
-      background-repeat: no-repeat;
-      background-position: 0vw -9vh;
-      background-size: 100vw;
-
-      .main-text 
+      .leaflet-container
       {
-        margin-top: -43vh;
+        height: 100%;
+        width: 100%;
       }
     }
+  }
+
+  #footer
+  {
+    margin-top: 0;
+    height: 50vh;
+  }
 }
 
 // Layout on medium: 911px and below
@@ -77,13 +102,6 @@
     #skills 
     {
       margin-top: 1vh;
-    }
-    #contact
-    {
-      .main-text 
-      {
-        margin-top: -37vh;
-      }
     }
 }
 
@@ -112,7 +130,7 @@
 
       .main-text 
       {
-        margin-top: -32vh; //-280px;
+        margin-top: 10vh; 
       }
     }
 
@@ -168,18 +186,38 @@
     {
       position: relative;
       min-height: 100vh;
-      padding-top: 18vh;
+      padding-top: 2vh;
 
       background-image: url('../../assets/hand_touching_global_network02.jpg');
       background-repeat: no-repeat;
       background-position: top;
       background-size: 100vw;
+
+      .main-text
+      {
+        margin-left: 0vw;
+      }
+
+      .map-wrap
+      {
+        height: 40vh;
+        width: 100vw;
+        position: relative;
+        overflow-y: hidden;
+        padding: 20px;
+
+        .leaflet-container
+        {
+          height: 100%;
+          width: 100%;
+        }
+      }
     }
 
     #footer
     {
       position: relative;
-      min-height: 100vh;
+      min-height: 50vh;
     }
 }
 
@@ -193,15 +231,15 @@
 
   #contact 
   {
-    padding-top: 23vh;
+    padding-top: 2vh;
   }
 }
 
-@media (max-width: 389px)
+@media (max-width: 389px) // 361
 {
   #contact
   {
-    padding-top: 20vh;
+    padding-top: 3vh;
   }
 }
 
@@ -209,7 +247,7 @@
 {
   #contact 
   {
-    padding-top: 46vh;
+    padding-top: 6vh;
   }
 }
 @media (max-width: 360px) and (min-height: 640px)
@@ -220,75 +258,22 @@
   }
   #contact 
   {
-    padding-top: 44vh;
+    padding-top: 4vh;
   }
 }
 @media (max-width: 360px) and (min-height: 740px)
 {
   #contact 
   {
-    padding-top: 32vh;
+    padding-top: 2vh;
   }
 }
 
-
-// Layout on large devices (No scrolling)
-// @media (min-width: 992px)
-// {
-//   // Background image on home page
-//     #home
-//     {
-//         min-height: 100vh;
-//         padding-top: 80px;
-//         background-image: url('../../assets/bg-blockchain02.jpg');
-//         background-repeat: no-repeat;
-//         background-position: center;
-//         background-size: cover;
-//     }
-
-//     #skills
-//     {
-//       max-height: 100vh;
-
-//       .central-wrapper
-//       {
-//         .main-text
-//         {
-//           padding-top: 70px;
-//         }
-//       }
-//     }
-
-//     #projects
-//     {
-//       min-height: 100vh;
-//       padding-top: 0px;
-
-//     }
-
-//     #contact
-//     {
-//       .main-text 
-//       {
-//         margin-top: 100px;
-//       }
-//     }
-// }
-
-// // Extra Large 
-// @media (min-width: 1280px)
-// {
-//   #skills
-//   {
-//     .central-wrapper
-//     {
-//       .main-text
-//       {
-//         margin-top: 120px;
-//       }
-//     }
-//   }
-  
-// }
-
-
+// Disable scrolling on large screens
+@media (min-width: 992px)
+{
+  .scroll
+  {
+    display: none;
+  }
+}

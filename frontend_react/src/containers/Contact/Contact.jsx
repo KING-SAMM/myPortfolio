@@ -4,10 +4,13 @@ import { useEffect, useRef, useState } from 'react';
 import { FlatButton } from '../../components';
 import emailjs from '@emailjs/browser';
 import { Social } from '../../components';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 const Contact = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate');
   const refForm = useRef();
+
+  const position = [6.489898, 3.356642];
  
   // Animate (rubberBand) the Home page letters on hover 
   useEffect(() => 
@@ -46,7 +49,7 @@ const Contact = () => {
 
   return (
     <div id='contact' className='container contact-page'>
-      <div className="main-text ml-[5%] lg:mt-[50px] lg:ml-[10%]">
+      <div className="main-text lg:mt-[50px] lg:ml-[8%]">
         <h1>
           <AnimatedLetters 
             letterClass={ letterClass }
@@ -77,6 +80,33 @@ const Contact = () => {
             </ul>
           </form>
         </div>
+      </div>
+
+      <div className="info-map bg-gradient-to-r from-black to-[#111111] text-white font-['Helvetica'] font-light p-5 md xs360:mt-12 z-[999999] md:absolute md:mt-[643px] md820:mt-[655px] md912:mt-[673px] md:right-2 lg992:-top-[610px] lg992:left-[61%] lg992:w-[267px] lg992:box-border ">
+        Samuel K. Onyegbuna, 
+        <br />
+        Nigeria, 
+        <br />
+        81, Bode Thomas Street  <br />
+        Surulere, Lagos <br />
+        <span className='block text-[#ffd700] text-xl pt-5'>
+          kcsamm11@gmail.com
+        </span>
+
+      </div>
+
+      <div className="map-wrap bg-gradient-to-r from-sky-500 to-indigo-500 xs360:mt-4 md:mt-8 lg992:h-screen">
+        <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+          <TileLayer
+            attribution='&copy; 2022, KC Samm | <a href="https://studioeternal.net">studioeternal</a>'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={position}>
+            <Popup>
+              Why not drop in <br /> Let's chat over tea.
+            </Popup>
+          </Marker>
+        </MapContainer>
       </div>
     </div>
   )
